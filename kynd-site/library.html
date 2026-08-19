@@ -1,0 +1,785 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Kynd Library — 70 curated AI agent tools</title>
+  <meta name="description" content="A curated library of 70 AI agent tools — frameworks, coding agents, voice, memory, infra — each with what it is, what to build with it, and what it costs. Free, no email required.">
+
+  <meta property="og:title" content="The Kynd Library — 70 curated AI agent tools">
+  <meta property="og:description" content="Curation over volume. 70 tools for people building with AI agents. Free, no email required.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://join-kynd.netlify.app/library.html">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="canonical" href="https://join-kynd.netlify.app/library.html">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='14'%20fill='%237db86b'/%3E%3Ctext%20x='32'%20y='45'%20font-family='Georgia,serif'%20font-size='40'%20fill='%23ffffff'%20text-anchor='middle'%3EK%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="library.css">
+</head>
+<body>
+  <header class="lib-header">
+    <a class="lib-brand" href="/">Kynd</a>
+    <a class="lib-join" href="https://discord.gg/rfqYHF6H9j" target="_blank" rel="noopener noreferrer">Join the free Discord</a>
+  </header>
+
+  <main class="lib-main">
+    <section class="lib-hero">
+      <p class="lib-eyebrow">The Kynd Library</p>
+      <h1>70 tools for people who actually build with agents.</h1>
+      <p class="lib-lede">
+        Curation over volume. Every tool here is one we would actually reach for — what it is,
+        what you'd build with it, and what it costs. No email, no gate, no affiliate spam.
+      </p>
+      <div class="lib-actions">
+        <a class="btn btn--primary" href="https://discord.gg/rfqYHF6H9j" target="_blank" rel="noopener noreferrer">Get the weekly drop in Discord</a>
+        <a class="btn btn--ghost" href="KYND_Library.xlsx" download>Download the spreadsheet</a>
+      </div>
+    </section>
+
+    <section class="lib-controls">
+      <input id="q" class="lib-search" type="search" placeholder="Search 70 tools — e.g. voice, memory, scraping, self-host" autocomplete="off">
+      <div class="lib-chips">
+        <button class="chip is-active" data-filter="all">All <span>70</span></button>
+        <button class="chip" data-filter="Agent Frameworks">Agent Frameworks <span>12</span></button>
+        <button class="chip" data-filter="Agent Infra">Agent Infra <span>2</span></button>
+        <button class="chip" data-filter="Browser &amp; Scraping">Browser &amp; Scraping <span>5</span></button>
+        <button class="chip" data-filter="Coding Agents">Coding Agents <span>6</span></button>
+        <button class="chip" data-filter="General Agents">General Agents <span>1</span></button>
+        <button class="chip" data-filter="Hosting">Hosting <span>4</span></button>
+        <button class="chip" data-filter="LLM Platforms">LLM Platforms <span>9</span></button>
+        <button class="chip" data-filter="Media">Media <span>5</span></button>
+        <button class="chip" data-filter="Memory &amp; Data">Memory &amp; Data <span>7</span></button>
+        <button class="chip" data-filter="No-code">No-code <span>4</span></button>
+        <button class="chip" data-filter="Observability">Observability <span>3</span></button>
+        <button class="chip" data-filter="Research">Research <span>3</span></button>
+        <button class="chip" data-filter="Tooling">Tooling <span>1</span></button>
+        <button class="chip" data-filter="Voice">Voice <span>8</span></button>
+      </div>
+      <p class="lib-count" id="count"></p>
+    </section>
+
+    <section class="lib-grid" id="grid">
+      <article class="tool" data-group="LLM Platforms" data-tier="Top 50" data-search="openai llm platform leading frontier llms (gpt-4o, o-series) and apis. default model backend for agents and chat apps.">
+        <div class="tool__top">
+          <h3 class="tool__name"><a href="https://openai.com" target="_blank" rel="noopener noreferrer">OpenAI</a></h3>
+          <span class="tool__tier tool__tier--top">Top 50</span>
+        </div>
+        <p class="tool__cat">LLM Platform</p>
+        <p class="tool__desc">Leading frontier LLMs (GPT-4o, o-series) and APIs.</p>
+        <p class="tool__use"><span>Use it for</span> Default model backend for agents and chat apps.</p>
+        <p class="tool__price">Free tier + pay-as-you-go</p>
+      </article>
+      <article class="tool" data-group="LLM Platforms" data-tier="Top 50" data-search="anthropic (claude) llm platform frontier llms with strong reasoning and long context. agent reasoning core and safe tool-use backend.">
+        <div class="tool__top">
+          <h3 class="tool__name"><a href="https://claude.ai" target="_blank" rel="noopener noreferrer">Anthropic (Claude)</a></h3>
+          <span class="tool__tier tool__tier--top">Top 50</span>
+        </div>
+        <p class="tool__cat">LLM Platform</p>
+        <p class="tool__desc">Frontier LLMs with strong reasoning and long context.</p>
+        <p class="tool__use"><span>Use it for</span> Agent reasoning core and safe tool-use backend.</p>
+        <p class="tool__price">Free + Pro $20/mo + API</p>
+      </article>
+      <article class="tool" data-group="LLM Platforms" data-tier="Top 50" data-search="google gemini llm platform multimodal llms with very large context windows. long-context rag and multimodal agent inputs.">
+        <div class="tool__top">
+          <h3 class="tool__name"><a href="https://gemini.google.com" target="_blank" rel="noopener noreferrer">Google Gemini</a></h3>
+          <span class="tool__tier tool__tier--top">Top 50</span>
+        </div>
+        <p class="tool__cat">LLM Platform</p>
+        <p class="tool__desc">Multimodal LLMs with very large context windows.</p>
+        <p class="tool__use"><span>Use it for</span> Long-context RAG and multimodal agent inputs.</p>
+        <p class="tool__price">Free + AI Pro $20/mo + API</p>
+      </article>
+      <article class="tool" data-group="LLM Platforms" data-tier="Top 50" data-search="groq llm platform ultra-fast llm inference via lpu hardware. low-latency model serving for real-time agents.">
+        <div class="tool__top">
+          <h3 class="tool__name"><a href="https://groq.com" target="_blank" rel="noopener noreferrer">Groq</a></h3>
+          <span class="tool__tier tool__tier--top">Top 50</span>
+        </div>
+        <p class="tool__cat">LLM Platform</p>
+        <p class="tool__desc">Ultra-fast LLM inference via LPU hardware.</p>
+        <p class="tool__use"><span>Use it for</span> Low-latency model serving for real-time agents.</p>
+        <p class="tool__price">Free tier + pay-as-you-go</p>
+      </article>
+      <article class="tool" data-group="LLM Platforms" data-tier="Top 50" data-search="together ai llm platform open-model inference, fine-tuning, and gpu cloud. host open-weight models and run inference at scale.">
+        <div class="tool__top">
+          <h3 class="tool__name"><a href="https://together.ai" target="_blank" rel="noopener noreferrer">Together AI</a></h3>
+          <span class="tool__tier tool__tier--top">Top 50</span>
+        </div>
+        <p class="tool__cat">LLM Platform</p>
+        <p class="tool__desc">Open-model inference, fine-tuning, and GPU cloud.</p>
+        <p class="tool__use"><span>Use it for</span> Host open-weight models and run inference at scale.</p>
+        <p class="tool__price">Free credits + pay-as-you-go</p>
+      </article>
+      <article class="tool" data-group="LLM Platforms" data-tier="Top 50" data-search="mistral ai llm platform european open and commercial llms (mixtral, etc.). efficient open-weight models for cost-sensitive agents.">
+        <div class="tool__top">
+          <h3 class="tool__name"><a href="https://mistral.ai" target="_blank" rel="noopener noreferrer">Mistral AI</a></h3>
+          <span class="tool__tier tool__tier--top">Top 50</span>
+        </div>
+        <p class="tool__cat">LLM Platform</p>
+        <p class="tool__desc">European open and commercial LLMs (Mixtral, etc.).</p>
+        <p class="tool__use"><span>Use it for</span> Efficient open-weight models for cost-sensitive agents.</p>
+        <p class="tool__price">Free tier + pay-as-you-go</p>
+      </article>
+      <article class="tool" data-group="LLM Platforms" data-tier="Top 50" data-search="replicate llm platform host and run open ml models with one api call. run image, audio, and llm models without infra.">
+        <div class="tool__top">
+          <h3 class="tool__name"><a href="https://replicate.com" target="_blank" rel="noopener noreferrer">Replicate</a></h3>
+          <span class="tool__tier tool__tier--top">Top 50</span>
+        </div>
+        <p class="tool__cat">LLM Platform</p>
+        <p class="tool__desc">Host and run open ML models with one API call.</p>
+        <p class="tool__use"><span>Use it for</span> Run image, audio, and LLM models without infra.</p>
+        <p class="tool__price">Pay-as-you-go</p>
+      </article>
+      <article class="tool" data-group="LLM Platforms" data-tier="Top 50" data-search="ollama local llm run open llms locally with a simple cli. private, offline model serving on dev machines.">
+        <div class="tool__top">
+          <h3 class="tool__name"><a href="https://ollama.com" target="_blank" rel="noopener noreferrer">Ollama</a></h3>
+          <span class="tool__tier tool__tier--top">Top 50</span>
+        </div>
+        <p class="tool__cat">Local LLM</p>
+        <p class="tool__desc">Run open LLMs locally with a simple CLI.</p>
+        <p class="tool__use"><span>Use it for</span> Private, offline model serving on dev machines.</p>
+        <p class="tool__price">Free (open source)</p>
+      </article>
+      <article class="tool" data-group="LLM Platforms" data-tier="Top 50" data-search="lm studio local llm gui to discover, download, and run local models. no-code local model testing before deployment.">
+        <div class="tool__top">
+          <h3 class="tool__name"><a href="https://lmstudio.ai" target="_blank" rel="noopener noreferrer">LM Studio</a></h3>
+          <span class="tool__tier tool__tier--top">Top 50</span>
+        </div>
+        <p class="tool__cat">Local LLM</p>
+        <p class="tool__desc">GUI to discover, download, and run local models.</p>
+        <p class="tool__use"><span>Use it for</span> No-code local model testing before deployment.</p>
+        <p class="tool__price">Free (local)</p>
+      </article>
+      <article class="tool" data-group="Agent Frameworks" data-tier="Top 50" data-search="langchain agent framework composable framework for llm apps and agents. orchestrate chains, tools, and memory in agents.">
+        <div class="tool__top">
+          <h3 class="tool__name"><a href="https://www.langchain.com" target="_blank" rel="noopener noreferrer">LangChain</a></h3>
+          <span class="tool__tier tool__tier--top">Top 50</span>
+        </div>
+        <p class="tool__cat">Agent Framework</p>
+        <p class="tool__desc">Composable framework for LLM apps and agents.</p>
+        <p class="tool__use"><span>Use it for</span> Orchestrate chains, tools, and memory in agents.</p>
+        <p class="tool__price">Free OSS + LangSmith paid</p>
+      </article>
+      <article class="tool" data-group="Agent Frameworks" data-tier="Top 50" data-search="llamaindex agent framework data framework for rag and context-augmented agents. connect private data sources to llm agents.">
+        <div class="tool__top">
+          <h3 class="tool__name"><a href="https://www.llamaindex.ai" target="_blank" rel="noopener noreferrer">LlamaIndex</a></h3>
+          <span class="tool__tier tool__tier--top">Top 50</span>
+        </div>
+        <p class="tool__cat">Agent Framework</p>
+        <p class="tool__desc">Data framework for RAG and context-augmented agents.</p>
+        <p class="tool__use"><span>Use it for</span> Connect private data sources to LLM agents.</p>
+        <p class="tool__price">Free OSS + managed paid</p>
+      </article>
+      <article class="tool" data-group="Agent Frameworks" data-tier="Top 50" data-search="autogen agent framework multi-agent conversation framework by microsoft. build collaborative multi-agent workflows.">
+        <div class="tool__top">
+          <h3 class="tool__name"><a href="https://microsoft.github.io/autogen/" target="_blank" rel="noopener noreferrer">AutoGen</a></h3>
+          <span class="tool__tier tool__tier--top">Top 50</span>
+        </div>
+        <p class="tool__cat">Agent Framework</p>
+        <p class="tool__desc">Multi-agent conversation framework by Microsoft.</p>
+        <p class="tool__use"><span>Use it for</span> Build collaborative multi-agent workflows.</p>
+        <p class="tool__price">Free (open source)</p>
+      </article>
+      <article class="tool" data-group="Agent Frameworks" data-tier="Top 50" data-search="crewai agent framework role-based multi-agent orchestration framework. assign agent roles to complete complex tasks.">
+        <div class="tool__top">
+          <h3 class="tool__name"><a href="https://www.crewai.com" target="_blank" rel="noopener noreferrer">CrewAI</a></h3>
+          <span class="tool__tier tool__tier--top">Top 50</span>
+        </div>
+        <p class="tool__cat">Agent Framework</p>
+        <p class="tool__desc">Role-based multi-agent orchestration framework.</p>
+        <p class="tool__use"><span>Use it for</span> Assign agent roles to complete complex tasks.</p>
+        <p class="tool__price">Free OSS + Enterprise</p>
+      </article>
+      <article class="tool" data-group="Agent Frameworks" data-tier="Top 50" data-search="langgraph agent framework graph-based stateful agent orchestration. build controllable, stateful agent workflows.">
+        <div class="tool__top">
+          <h3 class="tool__name"><a href="https://www.langchain.com/langgraph" target="_blank" rel="noopener noreferrer">LangGraph</a></h3>
+          <span class="tool__tier tool__tier--top">Top 50</span>
+        </div>
+        <p class="tool__cat">Agent Framework</p>
+        <p class="tool__desc">Graph-based stateful agent orchestration.</p>
+        <p class="tool__use"><span>Use it for</span> Build controllable, stateful agent workflows.</p>
+        <p class="tool__price">Free OSS + LangSmith paid</p>
+      </article>
+      <article class="tool" data-group="Agent Frameworks" data-tier="Top 50" data-search="pydantic ai agent framework type-safe agent framework built on pydantic. production-grade agents with validation in python.">
+        <div class="tool__top">
+          <h3 class="tool__name"><a href="https://ai.pydantic.dev" target="_blank" rel="noopener noreferrer">Pydantic AI</a></h3>
+          <span class="tool__tier tool__tier--top">Top 50</span>
+        </div>
+        <p class="tool__cat">Agent Framework</p>
+        <p class="tool__desc">Type-safe agent framework built on Pydantic.</p>
+        <p class="tool__use"><span>Use it for</span> Production-grade agents with validation in Python.</p>
+        <p class="tool__price">Free (open source)</p>
+      </article>
+      <article class="tool" data-group="No-code" data-tier="Top 50" data-search="n8n no-code/automation open-source workflow automation with ai nodes. wire agent steps into visual automations.">
+        <div class="tool__top">
+          <h3 class="tool__name"><a href="https://n8n.io" target="_blank" rel="noopener noreferrer">n8n</a></h3>
+          <span class="tool__tier tool__tier--top">Top 50</span>
+        </div>
+        <p class="tool__cat">No-code/Automation</p>
+        <p class="tool__desc">Open-source workflow automation with AI nodes.</p>
+        <p class="tool__use"><span>Use it for</span> Wire agent steps into visual automations.</p>
+        <p class="tool__price">Free self-host + Cloud $20/mo</p>
+      </article>
+      <article class="tool" data-group="No-code" data-tier="Top 50" data-search="zapier no-code/automation no-code app integration and task automation. trigger agents from 7,000+ app events.">
+        <div class="tool__top">
+          <h3 class="tool__name"><a href="https://zapier.com" target="_blank" rel="noopener noreferrer">Zapier</a></h3>
+          <span class="tool__tier tool__tier--top">Top 50</span>
+        </div>
+        <p class="tool__cat">No-code/Automation</p>
+        <p class="tool__desc">No-code app integration and task automation.</p>
+        <p class="tool__use"><span>Use it for</span> Trigger agents from 7,000+ app events.</p>
+        <p class="tool__price">Free + paid from $19.99/mo</p>
+      </article>
+      <article class="tool" data-group="No-code" data-tier="Top 50" data-search="make no-code/automation visual automation platform with complex scenarios. build multi-step agent-driven flows.">
+        <div class="tool__top">
+          <h3 class="tool__name"><a href="https://www.make.com" target="_blank" rel="noopener noreferrer">Make</a></h3>
+          <span class="tool__tier tool__tier--top">Top 50</span>
+        </div>
+        <p class="tool__cat">No-code/Automation</p>
+        <p class="tool__desc">Visual automation platform with complex scenarios.</p>
+        <p class="tool__use"><span>Use it for</span> Build multi-step agent-driven flows.</p>
+        <p class="tool__price">Free + paid from $9/mo</p>
+      </article>
+      <article class="tool" data-group="No-code" data-tier="Top 50" data-search="dify no-code/low-code open-source llmops platform to build ai apps. ship rag chatbots and agents with a ui.">
+        <div class="tool__top">
+          <h3 class="tool__name"><a href="https://dify.ai" target="_blank" rel="noopener noreferrer">Dify</a></h3>
+          <span class="tool__tier tool__tier--top">Top 50</span>
+        </div>
+        <p class="tool__cat">No-code/Low-code</p>
+        <p class="tool__desc">Open-source LLMOps platform to build AI apps.</p>
+        <p class="tool__use"><span>Use it for</span> Ship RAG chatbots and agents with a UI.</p>
+        <p class="tool__price">Free OSS + Cloud $59/mo</p>
+      </article>
+      <article class="tool" data-group="Memory &amp; Data" data-tier="Top 50" data-search="pinecone vector db managed serverless vector database. scalable semantic search and memory for agents.">
+        <div class="tool__top">
+          <h3 class="tool__name"><a href="https://www.pinecone.io" target="_blank" rel="noopener noreferrer">Pinecone</a></h3>
+          <span class="tool__tier tool__tier--top">Top 50</span>
+        </div>
+        <p class="tool__cat">Vector DB</p>
+        <p class="tool__desc">Managed serverless vector database.</p>
+        <p class="tool__use"><span>Use it for</span> Scalable semantic search and memory for agents.</p>
+        <p class="tool__price">Free + paid from $0 (Starter)</p>
+      </article>
+      <article class="tool" data-group="Memory &amp; Data" data-tier="Top 50" data-search="chroma vector db lightweight open-source embedding database. fast local/embedded vector store for prototypes.">
+        <div class="tool__top">
+          <h3 class="tool__name"><a href="https://www.trychroma.com" target="_blank" rel="noopener noreferrer">Chroma</a></h3>
+          <span class="tool__tier tool__tier--top">Top 50</span>
+        </div>
+        <p class="tool__cat">Vector DB</p>
+        <p class="tool__desc">Lightweight open-source embedding database.</p>
+        <p class="tool__use"><span>Use it for</span> Fast local/embedded vector store for prototypes.</p>
+        <p class="tool__price">Free OSS + Chroma Cloud</p>
+      </article>
+      <article class="tool" data-group="Memory &amp; Data" data-tier="Top 50" data-search="qdrant vector db high-performance vector database with filters. production vector search with payload filtering.">
+        <div class="tool__top">
+          <h3 class="tool__name"><a href="https://qdrant.tech" target="_blank" rel="noopener noreferrer">Qdrant</a></h3>
+          <span class="tool__tier tool__tier--top">Top 50</span>
+        </div>
+        <p class="tool__cat">Vector DB</p>
+        <p class="tool__desc">High-performance vector database with filters.</p>
+        <p class="tool__use"><span>Use it for</span> Production vector search with payload filtering.</p>
+        <p class="tool__price">Free OSS + Cloud $25/mo</p>
+      </article>
+      <article class="tool" data-group="Coding Agents" data-tier="Top 50" data-search="cursor dev tool/ide ai-native code editor built on vs code. agentic coding with inline and chat assistance.">
+        <div class="tool__top">
+          <h3 class="tool__name"><a href="https://cursor.com" target="_blank" rel="noopener noreferrer">Cursor</a></h3>
+          <span class="tool__tier tool__tier--top">Top 50</span>
+        </div>
+        <p class="tool__cat">Dev Tool/IDE</p>
+        <p class="tool__desc">AI-native code editor built on VS Code.</p>
+        <p class="tool__use"><span>Use it for</span> Agentic coding with inline and chat assistance.</p>
+        <p class="tool__price">Free + Pro $20/mo</p>
+      </article>
+      <article class="tool" data-group="Coding Agents" data-tier="Top 50" data-search="github copilot dev tool/ide ai pair programmer inside the ide. autocomplete and agent mode for faster builds.">
+        <div class="tool__top">
+          <h3 class="tool__name"><a href="https://github.com/features/copilot" target="_blank" rel="noopener noreferrer">GitHub Copilot</a></h3>
+          <span class="tool__tier tool__tier--top">Top 50</span>
+        </div>
+        <p class="tool__cat">Dev Tool/IDE</p>
+        <p class="tool__desc">AI pair programmer inside the IDE.</p>
+        <p class="tool__use"><span>Use it for</span> Autocomplete and agent mode for faster builds.</p>
+        <p class="tool__price">Free + Pro $10/mo</p>
+      </article>
+      <article class="tool" data-group="Coding Agents" data-tier="Top 50" data-search="replit dev tool/ide cloud ide with ai agent and instant deploy. prototype and host agents in the browser.">
+        <div class="tool__top">
+          <h3 class="tool__name"><a href="https://replit.com" target="_blank" rel="noopener noreferrer">Replit</a></h3>
+          <span class="tool__tier tool__tier--top">Top 50</span>
+        </div>
+        <p class="tool__cat">Dev Tool/IDE</p>
+        <p class="tool__desc">Cloud IDE with AI agent and instant deploy.</p>
+        <p class="tool__use"><span>Use it for</span> Prototype and host agents in the browser.</p>
+        <p class="tool__price">Free + Core $20/mo</p>
+      </article>
+      <article class="tool" data-group="Coding Agents" data-tier="Top 50" data-search="windsurf dev tool/ide ai coding editor with autonomous flows (cognition). agentic editing and command execution.">
+        <div class="tool__top">
+          <h3 class="tool__name"><a href="https://windsurf.com" target="_blank" rel="noopener noreferrer">Windsurf</a></h3>
+          <span class="tool__tier tool__tier--top">Top 50</span>
+        </div>
+        <p class="tool__cat">Dev Tool/IDE</p>
+        <p class="tool__desc">AI coding editor with autonomous flows (Cognition).</p>
+        <p class="tool__use"><span>Use it for</span> Agentic editing and command execution.</p>
+        <p class="tool__price">Free + Pro $15/mo</p>
+      </article>
+      <article class="tool" data-group="Coding Agents" data-tier="Top 50" data-search="postman dev tool/ide api development, testing, and observability. test and document agent tool/api endpoints.">
+        <div class="tool__top">
+          <h3 class="tool__name"><a href="https://www.postman.com" target="_blank" rel="noopener noreferrer">Postman</a></h3>
+          <span class="tool__tier tool__tier--top">Top 50</span>
+        </div>
+        <p class="tool__cat">Dev Tool/IDE</p>
+        <p class="tool__desc">API development, testing, and observability.</p>
+        <p class="tool__use"><span>Use it for</span> Test and document agent tool/API endpoints.</p>
+        <p class="tool__price">Free + paid from $14/mo</p>
+      </article>
+      <article class="tool" data-group="Voice" data-tier="Top 50" data-search="elevenlabs voice high-fidelity text-to-speech and voice cloning. give agents natural-sounding spoken output.">
+        <div class="tool__top">
+          <h3 class="tool__name"><a href="https://elevenlabs.io" target="_blank" rel="noopener noreferrer">ElevenLabs</a></h3>
+          <span class="tool__tier tool__tier--top">Top 50</span>
+        </div>
+        <p class="tool__cat">Voice</p>
+        <p class="tool__desc">High-fidelity text-to-speech and voice cloning.</p>
+        <p class="tool__use"><span>Use it for</span> Give agents natural-sounding spoken output.</p>
+        <p class="tool__price">Free + paid from $5/mo</p>
+      </article>
+      <article class="tool" data-group="Media" data-tier="Top 50" data-search="suno content generation ai music and song generation from prompts. add original soundtracks to agent products.">
+        <div class="tool__top">
+          <h3 class="tool__name"><a href="https://suno.com" target="_blank" rel="noopener noreferrer">Suno</a></h3>
+          <span class="tool__tier tool__tier--top">Top 50</span>
+        </div>
+        <p class="tool__cat">Content Generation</p>
+        <p class="tool__desc">AI music and song generation from prompts.</p>
+        <p class="tool__use"><span>Use it for</span> Add original soundtracks to agent products.</p>
+        <p class="tool__price">Free + Pro $10/mo</p>
+      </article>
+      <article class="tool" data-group="Voice" data-tier="Top 50" data-search="whisper voice open-source speech-to-text model by openai. transcribe user audio for voice-driven agents.">
+        <div class="tool__top">
+          <h3 class="tool__name"><a href="https://openai.com/research/whisper" target="_blank" rel="noopener noreferrer">Whisper</a></h3>
+          <span class="tool__tier tool__tier--top">Top 50</span>
+        </div>
+        <p class="tool__cat">Voice</p>
+        <p class="tool__desc">Open-source speech-to-text model by OpenAI.</p>
+        <p class="tool__use"><span>Use it for</span> Transcribe user audio for voice-driven agents.</p>
+        <p class="tool__price">Free (open source)</p>
+      </article>
+      <article class="tool" data-group="Voice" data-tier="Top 50" data-search="deepgram voice fast, accurate speech-to-text and tts apis. real-time transcription for voice agents.">
+        <div class="tool__top">
+          <h3 class="tool__name"><a href="https://deepgram.com" target="_blank" rel="noopener noreferrer">Deepgram</a></h3>
+          <span class="tool__tier tool__tier--top">Top 50</span>
+        </div>
+        <p class="tool__cat">Voice</p>
+        <p class="tool__desc">Fast, accurate speech-to-text and TTS APIs.</p>
+        <p class="tool__use"><span>Use it for</span> Real-time transcription for voice agents.</p>
+        <p class="tool__price">Free credits + pay-as-you-go</p>
+      </article>
+      <article class="tool" data-group="Media" data-tier="Top 50" data-search="midjourney image high-quality ai image generation. produce visual assets for agent outputs.">
+        <div class="tool__top">
+          <h3 class="tool__name"><a href="https://www.midjourney.com" target="_blank" rel="noopener noreferrer">Midjourney</a></h3>
+          <span class="tool__tier tool__tier--top">Top 50</span>
+        </div>
+        <p class="tool__cat">Image</p>
+        <p class="tool__desc">High-quality AI image generation.</p>
+        <p class="tool__use"><span>Use it for</span> Produce visual assets for agent outputs.</p>
+        <p class="tool__price">From $10/mo</p>
+      </article>
+      <article class="tool" data-group="Media" data-tier="Top 50" data-search="runway image/video generative video and image editing tools. generate and edit video content with agents.">
+        <div class="tool__top">
+          <h3 class="tool__name"><a href="https://runwayml.com" target="_blank" rel="noopener noreferrer">Runway</a></h3>
+          <span class="tool__tier tool__tier--top">Top 50</span>
+        </div>
+        <p class="tool__cat">Image/Video</p>
+        <p class="tool__desc">Generative video and image editing tools.</p>
+        <p class="tool__use"><span>Use it for</span> Generate and edit video content with agents.</p>
+        <p class="tool__price">Free + paid from $12/mo</p>
+      </article>
+      <article class="tool" data-group="Media" data-tier="Top 50" data-search="comfyui image/video node-based visual workflow for diffusion models. compose reproducible image/video generation pipelines.">
+        <div class="tool__top">
+          <h3 class="tool__name"><a href="https://www.comfy.org" target="_blank" rel="noopener noreferrer">ComfyUI</a></h3>
+          <span class="tool__tier tool__tier--top">Top 50</span>
+        </div>
+        <p class="tool__cat">Image/Video</p>
+        <p class="tool__desc">Node-based visual workflow for diffusion models.</p>
+        <p class="tool__use"><span>Use it for</span> Compose reproducible image/video generation pipelines.</p>
+        <p class="tool__price">Free (open source)</p>
+      </article>
+      <article class="tool" data-group="Research" data-tier="Top 50" data-search="perplexity research/search conversational answer engine with citations. ground agent responses in web search.">
+        <div class="tool__top">
+          <h3 class="tool__name"><a href="https://www.perplexity.ai" target="_blank" rel="noopener noreferrer">Perplexity</a></h3>
+          <span class="tool__tier tool__tier--top">Top 50</span>
+        </div>
+        <p class="tool__cat">Research/Search</p>
+        <p class="tool__desc">Conversational answer engine with citations.</p>
+        <p class="tool__use"><span>Use it for</span> Ground agent responses in web search.</p>
+        <p class="tool__price">Free + Pro $20/mo</p>
+      </article>
+      <article class="tool" data-group="Research" data-tier="Top 50" data-search="firecrawl research/search api to scrape and convert sites into llm-ready data. feed clean web data into agent context.">
+        <div class="tool__top">
+          <h3 class="tool__name"><a href="https://www.firecrawl.dev" target="_blank" rel="noopener noreferrer">Firecrawl</a></h3>
+          <span class="tool__tier tool__tier--top">Top 50</span>
+        </div>
+        <p class="tool__cat">Research/Search</p>
+        <p class="tool__desc">API to scrape and convert sites into LLM-ready data.</p>
+        <p class="tool__use"><span>Use it for</span> Feed clean web data into agent context.</p>
+        <p class="tool__price">Free + paid from $16/mo</p>
+      </article>
+      <article class="tool" data-group="Research" data-tier="Top 50" data-search="exa research/search neural search api for web and embeddings. semantic web retrieval for research agents.">
+        <div class="tool__top">
+          <h3 class="tool__name"><a href="https://exa.ai" target="_blank" rel="noopener noreferrer">Exa</a></h3>
+          <span class="tool__tier tool__tier--top">Top 50</span>
+        </div>
+        <p class="tool__cat">Research/Search</p>
+        <p class="tool__desc">Neural search API for web and embeddings.</p>
+        <p class="tool__use"><span>Use it for</span> Semantic web retrieval for research agents.</p>
+        <p class="tool__price">Free + pay-as-you-go</p>
+      </article>
+      <article class="tool" data-group="Observability" data-tier="Top 50" data-search="langsmith observability/monitoring debugging, tracing, and eval platform for llms. trace and evaluate agent runs end to end.">
+        <div class="tool__top">
+          <h3 class="tool__name"><a href="https://www.langchain.com/langsmith" target="_blank" rel="noopener noreferrer">LangSmith</a></h3>
+          <span class="tool__tier tool__tier--top">Top 50</span>
+        </div>
+        <p class="tool__cat">Observability/Monitoring</p>
+        <p class="tool__desc">Debugging, tracing, and eval platform for LLMs.</p>
+        <p class="tool__use"><span>Use it for</span> Trace and evaluate agent runs end to end.</p>
+        <p class="tool__price">Free + paid from $39/mo</p>
+      </article>
+      <article class="tool" data-group="Observability" data-tier="Top 50" data-search="agentops observability/monitoring agent monitoring, replay, and cost tracking. track agent sessions, costs, and failures.">
+        <div class="tool__top">
+          <h3 class="tool__name"><a href="https://agentops.ai" target="_blank" rel="noopener noreferrer">AgentOps</a></h3>
+          <span class="tool__tier tool__tier--top">Top 50</span>
+        </div>
+        <p class="tool__cat">Observability/Monitoring</p>
+        <p class="tool__desc">Agent monitoring, replay, and cost tracking.</p>
+        <p class="tool__use"><span>Use it for</span> Track agent sessions, costs, and failures.</p>
+        <p class="tool__price">Free + paid from $10/mo</p>
+      </article>
+      <article class="tool" data-group="Observability" data-tier="Top 50" data-search="langfuse observability/monitoring open-source llm observability and tracing. self-hosted tracing and prompt analytics.">
+        <div class="tool__top">
+          <h3 class="tool__name"><a href="https://langfuse.com" target="_blank" rel="noopener noreferrer">Langfuse</a></h3>
+          <span class="tool__tier tool__tier--top">Top 50</span>
+        </div>
+        <p class="tool__cat">Observability/Monitoring</p>
+        <p class="tool__desc">Open-source LLM observability and tracing.</p>
+        <p class="tool__use"><span>Use it for</span> Self-hosted tracing and prompt analytics.</p>
+        <p class="tool__price">Free OSS + Cloud $0+</p>
+      </article>
+      <article class="tool" data-group="Hosting" data-tier="Top 50" data-search="vercel hosting/deploy edge platform for frontend and serverless apps. deploy agent uis and apis globally.">
+        <div class="tool__top">
+          <h3 class="tool__name"><a href="https://vercel.com" target="_blank" rel="noopener noreferrer">Vercel</a></h3>
+          <span class="tool__tier tool__tier--top">Top 50</span>
+        </div>
+        <p class="tool__cat">Hosting/Deploy</p>
+        <p class="tool__desc">Edge platform for frontend and serverless apps.</p>
+        <p class="tool__use"><span>Use it for</span> Deploy agent UIs and APIs globally.</p>
+        <p class="tool__price">Free + Pro $20/mo</p>
+      </article>
+      <article class="tool" data-group="Hosting" data-tier="Top 50" data-search="modal hosting/deploy serverless compute for ml and background jobs. run gpu workloads and cron tasks for agents.">
+        <div class="tool__top">
+          <h3 class="tool__name"><a href="https://modal.com" target="_blank" rel="noopener noreferrer">Modal</a></h3>
+          <span class="tool__tier tool__tier--top">Top 50</span>
+        </div>
+        <p class="tool__cat">Hosting/Deploy</p>
+        <p class="tool__desc">Serverless compute for ML and background jobs.</p>
+        <p class="tool__use"><span>Use it for</span> Run GPU workloads and cron tasks for agents.</p>
+        <p class="tool__price">Free + pay-as-you-go</p>
+      </article>
+      <article class="tool" data-group="Hosting" data-tier="Top 50" data-search="railway hosting/deploy instant deploys from git with managed infra. host agent services without devops overhead.">
+        <div class="tool__top">
+          <h3 class="tool__name"><a href="https://railway.app" target="_blank" rel="noopener noreferrer">Railway</a></h3>
+          <span class="tool__tier tool__tier--top">Top 50</span>
+        </div>
+        <p class="tool__cat">Hosting/Deploy</p>
+        <p class="tool__desc">Instant deploys from git with managed infra.</p>
+        <p class="tool__use"><span>Use it for</span> Host agent services without DevOps overhead.</p>
+        <p class="tool__price">Free + usage-based</p>
+      </article>
+      <article class="tool" data-group="Hosting" data-tier="Top 50" data-search="render hosting/deploy unified cloud for web services and workers. deploy always-on agent backends and cron.">
+        <div class="tool__top">
+          <h3 class="tool__name"><a href="https://render.com" target="_blank" rel="noopener noreferrer">Render</a></h3>
+          <span class="tool__tier tool__tier--top">Top 50</span>
+        </div>
+        <p class="tool__cat">Hosting/Deploy</p>
+        <p class="tool__desc">Unified cloud for web services and workers.</p>
+        <p class="tool__use"><span>Use it for</span> Deploy always-on agent backends and cron.</p>
+        <p class="tool__price">Free + paid from $7/mo</p>
+      </article>
+      <article class="tool" data-group="Memory &amp; Data" data-tier="Top 50" data-search="supabase data open-source firebase alternative (postgres). persistent storage, auth, and vector data.">
+        <div class="tool__top">
+          <h3 class="tool__name"><a href="https://supabase.com" target="_blank" rel="noopener noreferrer">Supabase</a></h3>
+          <span class="tool__tier tool__tier--top">Top 50</span>
+        </div>
+        <p class="tool__cat">Data</p>
+        <p class="tool__desc">Open-source Firebase alternative (Postgres).</p>
+        <p class="tool__use"><span>Use it for</span> Persistent storage, auth, and vector data.</p>
+        <p class="tool__price">Free + Pro $25/mo</p>
+      </article>
+      <article class="tool" data-group="Memory &amp; Data" data-tier="Top 50" data-search="duckdb data in-process analytical sql database. query local/agent datasets fast without a server.">
+        <div class="tool__top">
+          <h3 class="tool__name"><a href="https://duckdb.org" target="_blank" rel="noopener noreferrer">DuckDB</a></h3>
+          <span class="tool__tier tool__tier--top">Top 50</span>
+        </div>
+        <p class="tool__cat">Data</p>
+        <p class="tool__desc">In-process analytical SQL database.</p>
+        <p class="tool__use"><span>Use it for</span> Query local/agent datasets fast without a server.</p>
+        <p class="tool__price">Free (open source)</p>
+      </article>
+      <article class="tool" data-group="Browser &amp; Scraping" data-tier="Top 50" data-search="playwright browser/scraping browser automation library (with puppeteer sibling). drive browsers for agent web interaction.">
+        <div class="tool__top">
+          <h3 class="tool__name"><a href="https://playwright.dev" target="_blank" rel="noopener noreferrer">Playwright</a></h3>
+          <span class="tool__tier tool__tier--top">Top 50</span>
+        </div>
+        <p class="tool__cat">Browser/Scraping</p>
+        <p class="tool__desc">Browser automation library (with Puppeteer sibling).</p>
+        <p class="tool__use"><span>Use it for</span> Drive browsers for agent web interaction.</p>
+        <p class="tool__price">Free (open source)</p>
+      </article>
+      <article class="tool" data-group="Browser &amp; Scraping" data-tier="Top 50" data-search="browserbase browser/scraping headless browser infrastructure in the cloud. reliable cloud browser sessions for agents.">
+        <div class="tool__top">
+          <h3 class="tool__name"><a href="https://browserbase.com" target="_blank" rel="noopener noreferrer">Browserbase</a></h3>
+          <span class="tool__tier tool__tier--top">Top 50</span>
+        </div>
+        <p class="tool__cat">Browser/Scraping</p>
+        <p class="tool__desc">Headless browser infrastructure in the cloud.</p>
+        <p class="tool__use"><span>Use it for</span> Reliable cloud browser sessions for agents.</p>
+        <p class="tool__price">Free + paid from $30/mo</p>
+      </article>
+      <article class="tool" data-group="Browser &amp; Scraping" data-tier="Top 50" data-search="apify browser/scraping web scraping and automation platform and store. collect structured web data for agents at scale.">
+        <div class="tool__top">
+          <h3 class="tool__name"><a href="https://apify.com" target="_blank" rel="noopener noreferrer">Apify</a></h3>
+          <span class="tool__tier tool__tier--top">Top 50</span>
+        </div>
+        <p class="tool__cat">Browser/Scraping</p>
+        <p class="tool__desc">Web scraping and automation platform and store.</p>
+        <p class="tool__use"><span>Use it for</span> Collect structured web data for agents at scale.</p>
+        <p class="tool__price">Free + paid from $49/mo</p>
+      </article>
+      <article class="tool" data-group="Media" data-tier="Top 50" data-search="resend content/email developer-focused email api for transactional mail. send agent notifications and user emails via api.">
+        <div class="tool__top">
+          <h3 class="tool__name"><a href="https://resend.com" target="_blank" rel="noopener noreferrer">Resend</a></h3>
+          <span class="tool__tier tool__tier--top">Top 50</span>
+        </div>
+        <p class="tool__cat">Content/Email</p>
+        <p class="tool__desc">Developer-focused email API for transactional mail.</p>
+        <p class="tool__use"><span>Use it for</span> Send agent notifications and user emails via API.</p>
+        <p class="tool__price">Free + paid from $20/mo</p>
+      </article>
+      <article class="tool" data-group="Agent Frameworks" data-tier="Emerging" data-search="openai agents sdk agent framework lightweight sdk for building agentic workflows. standardize agent + tool + handoff patterns.">
+        <div class="tool__top">
+          <h3 class="tool__name"><a href="https://openai.github.io/openai-agents-python" target="_blank" rel="noopener noreferrer">OpenAI Agents SDK</a></h3>
+          <span class="tool__tier tool__tier--emerging">Emerging</span>
+        </div>
+        <p class="tool__cat">Agent Framework</p>
+        <p class="tool__desc">Lightweight SDK for building agentic workflows.</p>
+        <p class="tool__use"><span>Use it for</span> Standardize agent + tool + handoff patterns.</p>
+        <p class="tool__price">Free (open source)</p>
+      </article>
+      <article class="tool" data-group="Agent Frameworks" data-tier="Emerging" data-search="agno agent framework formerly phidata; fast multi-modal agent framework. build and deploy multi-agent systems quickly.">
+        <div class="tool__top">
+          <h3 class="tool__name"><a href="https://agno.com" target="_blank" rel="noopener noreferrer">Agno</a></h3>
+          <span class="tool__tier tool__tier--emerging">Emerging</span>
+        </div>
+        <p class="tool__cat">Agent Framework</p>
+        <p class="tool__desc">Formerly Phidata; fast multi-modal agent framework.</p>
+        <p class="tool__use"><span>Use it for</span> Build and deploy multi-agent systems quickly.</p>
+        <p class="tool__price">Free OSS + Cloud</p>
+      </article>
+      <article class="tool" data-group="Agent Frameworks" data-tier="Emerging" data-search="mastra agent framework typescript agent framework for js/ts developers. ship agents inside node/next.js apps.">
+        <div class="tool__top">
+          <h3 class="tool__name"><a href="https://mastra.ai" target="_blank" rel="noopener noreferrer">Mastra</a></h3>
+          <span class="tool__tier tool__tier--emerging">Emerging</span>
+        </div>
+        <p class="tool__cat">Agent Framework</p>
+        <p class="tool__desc">TypeScript agent framework for JS/TS developers.</p>
+        <p class="tool__use"><span>Use it for</span> Ship agents inside Node/Next.js apps.</p>
+        <p class="tool__price">Free OSS</p>
+      </article>
+      <article class="tool" data-group="Agent Frameworks" data-tier="Emerging" data-search="smolagents agent framework minimal code-agent library by hugging face. lightweight tool-calling agents in few lines.">
+        <div class="tool__top">
+          <h3 class="tool__name"><a href="https://huggingface.co/blog/smolagents" target="_blank" rel="noopener noreferrer">smolagents</a></h3>
+          <span class="tool__tier tool__tier--emerging">Emerging</span>
+        </div>
+        <p class="tool__cat">Agent Framework</p>
+        <p class="tool__desc">Minimal code-agent library by Hugging Face.</p>
+        <p class="tool__use"><span>Use it for</span> Lightweight tool-calling agents in few lines.</p>
+        <p class="tool__price">Free (open source)</p>
+      </article>
+      <article class="tool" data-group="Browser &amp; Scraping" data-tier="Emerging" data-search="browser use browser agent open-source ai agent that controls the web. autonomous web navigation and form filling.">
+        <div class="tool__top">
+          <h3 class="tool__name"><a href="https://browser-use.com" target="_blank" rel="noopener noreferrer">Browser Use</a></h3>
+          <span class="tool__tier tool__tier--emerging">Emerging</span>
+        </div>
+        <p class="tool__cat">Browser Agent</p>
+        <p class="tool__desc">Open-source AI agent that controls the web.</p>
+        <p class="tool__use"><span>Use it for</span> Autonomous web navigation and form filling.</p>
+        <p class="tool__price">Free OSS + Cloud</p>
+      </article>
+      <article class="tool" data-group="Browser &amp; Scraping" data-tier="Emerging" data-search="stagehand browser agent ai-native browser automation on top of playwright. natural-language browser actions for agents.">
+        <div class="tool__top">
+          <h3 class="tool__name"><a href="https://stagehand.dev" target="_blank" rel="noopener noreferrer">Stagehand</a></h3>
+          <span class="tool__tier tool__tier--emerging">Emerging</span>
+        </div>
+        <p class="tool__cat">Browser Agent</p>
+        <p class="tool__desc">AI-native browser automation on top of Playwright.</p>
+        <p class="tool__use"><span>Use it for</span> Natural-language browser actions for agents.</p>
+        <p class="tool__price">Free OSS + paid</p>
+      </article>
+      <article class="tool" data-group="General Agents" data-tier="Emerging" data-search="manus general agent autonomous general-purpose ai agent product. offload multi-step research and tasks end to end.">
+        <div class="tool__top">
+          <h3 class="tool__name"><a href="https://manus.im" target="_blank" rel="noopener noreferrer">Manus</a></h3>
+          <span class="tool__tier tool__tier--emerging">Emerging</span>
+        </div>
+        <p class="tool__cat">General Agent</p>
+        <p class="tool__desc">Autonomous general-purpose AI agent product.</p>
+        <p class="tool__use"><span>Use it for</span> Offload multi-step research and tasks end to end.</p>
+        <p class="tool__price">Waitlist / credit-based</p>
+      </article>
+      <article class="tool" data-group="Coding Agents" data-tier="Emerging" data-search="augment code coding agent agentic software-development assistant for teams. whole-codebase-aware coding and refactoring.">
+        <div class="tool__top">
+          <h3 class="tool__name"><a href="https://www.augmentcode.com" target="_blank" rel="noopener noreferrer">Augment Code</a></h3>
+          <span class="tool__tier tool__tier--emerging">Emerging</span>
+        </div>
+        <p class="tool__cat">Coding Agent</p>
+        <p class="tool__desc">Agentic software-development assistant for teams.</p>
+        <p class="tool__use"><span>Use it for</span> Whole-codebase-aware coding and refactoring.</p>
+        <p class="tool__price">Free + paid tiers</p>
+      </article>
+      <article class="tool" data-group="Voice" data-tier="Emerging" data-search="vapi voice agent build and deploy voice ai agents via api. phone and voice conversational agents.">
+        <div class="tool__top">
+          <h3 class="tool__name"><a href="https://vapi.ai" target="_blank" rel="noopener noreferrer">Vapi</a></h3>
+          <span class="tool__tier tool__tier--emerging">Emerging</span>
+        </div>
+        <p class="tool__cat">Voice Agent</p>
+        <p class="tool__desc">Build and deploy voice AI agents via API.</p>
+        <p class="tool__use"><span>Use it for</span> Phone and voice conversational agents.</p>
+        <p class="tool__price">Pay-as-you-go</p>
+      </article>
+      <article class="tool" data-group="Voice" data-tier="Emerging" data-search="retell ai voice agent platform for human-like voice agents. customer-facing voice agents with low latency.">
+        <div class="tool__top">
+          <h3 class="tool__name"><a href="https://www.retellai.com" target="_blank" rel="noopener noreferrer">Retell AI</a></h3>
+          <span class="tool__tier tool__tier--emerging">Emerging</span>
+        </div>
+        <p class="tool__cat">Voice Agent</p>
+        <p class="tool__desc">Platform for human-like voice agents.</p>
+        <p class="tool__use"><span>Use it for</span> Customer-facing voice agents with low latency.</p>
+        <p class="tool__price">Pay-as-you-go</p>
+      </article>
+      <article class="tool" data-group="Voice" data-tier="Emerging" data-search="cartesia voice real-time low-latency text-to-speech. streaming voice output for live agents.">
+        <div class="tool__top">
+          <h3 class="tool__name"><a href="https://cartesia.ai" target="_blank" rel="noopener noreferrer">Cartesia</a></h3>
+          <span class="tool__tier tool__tier--emerging">Emerging</span>
+        </div>
+        <p class="tool__cat">Voice</p>
+        <p class="tool__desc">Real-time low-latency text-to-speech.</p>
+        <p class="tool__use"><span>Use it for</span> Streaming voice output for live agents.</p>
+        <p class="tool__price">Pay-as-you-go</p>
+      </article>
+      <article class="tool" data-group="Voice" data-tier="Emerging" data-search="bland ai voice agent phone-call automation with ai agents. outbound/inbound call agents at scale.">
+        <div class="tool__top">
+          <h3 class="tool__name"><a href="https://www.bland.ai" target="_blank" rel="noopener noreferrer">Bland AI</a></h3>
+          <span class="tool__tier tool__tier--emerging">Emerging</span>
+        </div>
+        <p class="tool__cat">Voice Agent</p>
+        <p class="tool__desc">Phone-call automation with AI agents.</p>
+        <p class="tool__use"><span>Use it for</span> Outbound/inbound call agents at scale.</p>
+        <p class="tool__price">Pay-as-you-go</p>
+      </article>
+      <article class="tool" data-group="Voice" data-tier="Emerging" data-search="livekit voice infra open-source real-time voice/video infrastructure. build low-latency multimodal agent conversations.">
+        <div class="tool__top">
+          <h3 class="tool__name"><a href="https://livekit.io" target="_blank" rel="noopener noreferrer">LiveKit</a></h3>
+          <span class="tool__tier tool__tier--emerging">Emerging</span>
+        </div>
+        <p class="tool__cat">Voice Infra</p>
+        <p class="tool__desc">Open-source real-time voice/video infrastructure.</p>
+        <p class="tool__use"><span>Use it for</span> Build low-latency multimodal agent conversations.</p>
+        <p class="tool__price">Free OSS + Cloud</p>
+      </article>
+      <article class="tool" data-group="Memory &amp; Data" data-tier="Emerging" data-search="mem0 memory self-improving memory layer for ai agents. persistent, personalized agent memory.">
+        <div class="tool__top">
+          <h3 class="tool__name"><a href="https://mem0.ai" target="_blank" rel="noopener noreferrer">Mem0</a></h3>
+          <span class="tool__tier tool__tier--emerging">Emerging</span>
+        </div>
+        <p class="tool__cat">Memory</p>
+        <p class="tool__desc">Self-improving memory layer for AI agents.</p>
+        <p class="tool__use"><span>Use it for</span> Persistent, personalized agent memory.</p>
+        <p class="tool__price">Free + paid tiers</p>
+      </article>
+      <article class="tool" data-group="Memory &amp; Data" data-tier="Emerging" data-search="zep memory long-term memory and graph for llm agents. add durable, searchable memory to agents.">
+        <div class="tool__top">
+          <h3 class="tool__name"><a href="https://www.getzep.com" target="_blank" rel="noopener noreferrer">Zep</a></h3>
+          <span class="tool__tier tool__tier--emerging">Emerging</span>
+        </div>
+        <p class="tool__cat">Memory</p>
+        <p class="tool__desc">Long-term memory and graph for LLM agents.</p>
+        <p class="tool__use"><span>Use it for</span> Add durable, searchable memory to agents.</p>
+        <p class="tool__price">Free + paid tiers</p>
+      </article>
+      <article class="tool" data-group="Tooling" data-tier="Emerging" data-search="composio tooling/integrations managed tool and integration hub for agents. connect 100+ saas tools to agents securely.">
+        <div class="tool__top">
+          <h3 class="tool__name"><a href="https://composio.dev" target="_blank" rel="noopener noreferrer">Composio</a></h3>
+          <span class="tool__tier tool__tier--emerging">Emerging</span>
+        </div>
+        <p class="tool__cat">Tooling/Integrations</p>
+        <p class="tool__desc">Managed tool and integration hub for agents.</p>
+        <p class="tool__use"><span>Use it for</span> Connect 100+ SaaS tools to agents securely.</p>
+        <p class="tool__price">Free + paid tiers</p>
+      </article>
+      <article class="tool" data-group="Agent Infra" data-tier="Emerging" data-search="inngest workflow infra durable serverless workflows and background jobs. reliable multi-step agent orchestration.">
+        <div class="tool__top">
+          <h3 class="tool__name"><a href="https://www.inngest.com" target="_blank" rel="noopener noreferrer">Inngest</a></h3>
+          <span class="tool__tier tool__tier--emerging">Emerging</span>
+        </div>
+        <p class="tool__cat">Workflow Infra</p>
+        <p class="tool__desc">Durable serverless workflows and background jobs.</p>
+        <p class="tool__use"><span>Use it for</span> Reliable multi-step agent orchestration.</p>
+        <p class="tool__price">Free + paid tiers</p>
+      </article>
+      <article class="tool" data-group="Agent Infra" data-tier="Emerging" data-search="cloudflare agents agent infra build stateful ai agents on cloudflare&#x27;s edge. deploy agents with durable execution at edge.">
+        <div class="tool__top">
+          <h3 class="tool__name"><a href="https://developers.cloudflare.com/agents/" target="_blank" rel="noopener noreferrer">Cloudflare Agents</a></h3>
+          <span class="tool__tier tool__tier--emerging">Emerging</span>
+        </div>
+        <p class="tool__cat">Agent Infra</p>
+        <p class="tool__desc">Build stateful AI agents on Cloudflare&#x27;s edge.</p>
+        <p class="tool__use"><span>Use it for</span> Deploy agents with durable execution at edge.</p>
+        <p class="tool__price">Free tier + usage</p>
+      </article>
+      <article class="tool" data-group="Agent Frameworks" data-tier="Emerging" data-search="letta agent framework stateful agents with memory (formerly memgpt). long-running agents with managed state.">
+        <div class="tool__top">
+          <h3 class="tool__name"><a href="https://www.letta.com" target="_blank" rel="noopener noreferrer">Letta</a></h3>
+          <span class="tool__tier tool__tier--emerging">Emerging</span>
+        </div>
+        <p class="tool__cat">Agent Framework</p>
+        <p class="tool__desc">Stateful agents with memory (formerly MemGPT).</p>
+        <p class="tool__use"><span>Use it for</span> Long-running agents with managed state.</p>
+        <p class="tool__price">Free OSS + Cloud</p>
+      </article>
+      <article class="tool" data-group="Agent Frameworks" data-tier="Emerging" data-search="voltagent agent framework open-source typescript agent development framework. compose js/ts agents with memory and tools.">
+        <div class="tool__top">
+          <h3 class="tool__name"><a href="https://www.voltagent.com" target="_blank" rel="noopener noreferrer">VoltAgent</a></h3>
+          <span class="tool__tier tool__tier--emerging">Emerging</span>
+        </div>
+        <p class="tool__cat">Agent Framework</p>
+        <p class="tool__desc">Open-source TypeScript agent development framework.</p>
+        <p class="tool__use"><span>Use it for</span> Compose JS/TS agents with memory and tools.</p>
+        <p class="tool__price">Free (open source)</p>
+      </article>
+    </section>
+
+    <p class="lib-empty" id="empty" hidden>Nothing matches that. Try a broader word.</p>
+
+    <section class="lib-cta">
+      <h2>This list changes every week.</h2>
+      <p>New tools arrive daily and most of them are noise. We filter it in the open — the picks that survive land in the Kynd Discord first.</p>
+      <a class="btn btn--primary" href="https://discord.gg/rfqYHF6H9j" target="_blank" rel="noopener noreferrer">Join the free Discord</a>
+    </section>
+  </main>
+
+  <footer class="lib-footer">
+    <p>Kynd — know yourself, build with intention.</p>
+    <p><a href="/">Home</a> · <a href="https://discord.gg/rfqYHF6H9j" target="_blank" rel="noopener noreferrer">Discord</a> · <a href="https://x.com/francoleff" target="_blank" rel="noopener noreferrer">X</a></p>
+  </footer>
+
+  <script src="library.js"></script>
+  <script data-goatcounter="https://francoleff.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

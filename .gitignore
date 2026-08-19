@@ -1,0 +1,15 @@
+# Local safety net for the Kynd workspace.
+
+.DS_Store
+*.swp
+__pycache__/
+*.pyc
+
+# Regenerable build output
+kynd-library/_site/
+content-engine/generated/
+
+# Secrets
+*.token
+discord_token.txt
+.env

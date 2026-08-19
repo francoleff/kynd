@@ -1,0 +1,194 @@
+{
+  "sections": [
+    {
+      "file": "01-start-here.md",
+      "title": "1. Introduction & Hermes Agent Philosophy",
+      "blocks": 15,
+      "histogram": {
+        "heading_1": 1,
+        "paragraph": 3,
+        "bulleted_list_item": 9,
+        "divider": 1,
+        "callout": 1
+      }
+    },
+    {
+      "file": "02-installation-setup.md",
+      "title": "02 : Getting set up",
+      "blocks": 63,
+      "histogram": {
+        "heading_1": 1,
+        "paragraph": 20,
+        "divider": 3,
+        "heading_2": 6,
+        "code": 7,
+        "bulleted_list_item": 12,
+        "to_do": 6,
+        "callout": 1,
+        "heading_3": 6,
+        "table": 1
+      }
+    },
+    {
+      "file": "03-understanding-the-harness.md",
+      "title": "3. The Harness: Tools, Memory & Connections",
+      "blocks": 51,
+      "histogram": {
+        "heading_1": 1,
+        "paragraph": 16,
+        "bulleted_list_item": 24,
+        "code": 9,
+        "callout": 1
+      }
+    },
+    {
+      "file": "04-build-your-first-agent.md",
+      "title": "4. Build 1: The Research Brief Agent",
+      "blocks": 55,
+      "histogram": {
+        "heading_1": 1,
+        "paragraph": 14,
+        "bulleted_list_item": 11,
+        "code": 10,
+        "heading_3": 4,
+        "numbered_list_item": 9,
+        "to_do": 5,
+        "callout": 1
+      }
+    },
+    {
+      "file": "05-kynd-starter-kit.md",
+      "title": "5. Persona, Identity & The Starter Kit",
+      "blocks": 27,
+      "histogram": {
+        "heading_1": 1,
+        "paragraph": 5,
+        "bulleted_list_item": 10,
+        "code": 9,
+        "table": 1,
+        "callout": 1
+      }
+    },
+    {
+      "file": "06-real-projects.md",
+      "title": "6. Practical Agent Builds",
+      "blocks": 42,
+      "histogram": {
+        "heading_1": 1,
+        "paragraph": 2,
+        "bulleted_list_item": 13,
+        "code": 4,
+        "numbered_list_item": 20,
+        "table": 1,
+        "callout": 1
+      }
+    },
+    {
+      "file": "07-prompt-vault.md",
+      "title": "7. The Prompt Vault",
+      "blocks": 53,
+      "histogram": {
+        "heading_1": 1,
+        "paragraph": 2,
+        "bulleted_list_item": 17,
+        "code": 32,
+        "callout": 1
+      }
+    },
+    {
+      "file": "08-troubleshooting.md",
+      "title": "8. Troubleshooting",
+      "blocks": 45,
+      "histogram": {
+        "heading_1": 1,
+        "paragraph": 5,
+        "bulleted_list_item": 32,
+        "code": 6,
+        "table": 1
+      }
+    }
+  ],
+  "assets": [
+    {
+      "file": "AGENTS.md",
+      "title": "AGENTS.md : Kynd project instructions template",
+      "blocks": 3,
+      "histogram": {
+        "heading_1": 1,
+        "paragraph": 1,
+        "code": 1
+      }
+    },
+    {
+      "file": "SKILL-template.md",
+      "title": "SKILL.md : skill template",
+      "blocks": 4,
+      "histogram": {
+        "heading_1": 1,
+        "paragraph": 2,
+        "code": 1
+      }
+    },
+    {
+      "file": "SOUL.md",
+      "title": "SOUL.md : Kynd starter personality",
+      "blocks": 3,
+      "histogram": {
+        "heading_1": 1,
+        "paragraph": 1,
+        "code": 1
+      }
+    },
+    {
+      "file": "autonomous-execution-template.md",
+      "title": "Autonomous execution template",
+      "blocks": 3,
+      "histogram": {
+        "heading_1": 1,
+        "paragraph": 1,
+        "code": 1
+      }
+    },
+    {
+      "file": "planning-template.md",
+      "title": "Planning template",
+      "blocks": 3,
+      "histogram": {
+        "heading_1": 1,
+        "paragraph": 1,
+        "code": 1
+      }
+    },
+    {
+      "file": "qa-template.md",
+      "title": "QA template",
+      "blocks": 3,
+      "histogram": {
+        "heading_1": 1,
+        "paragraph": 1,
+        "code": 1
+      }
+    },
+    {
+      "file": "research-template.md",
+      "title": "Research template",
+      "blocks": 3,
+      "histogram": {
+        "heading_1": 1,
+        "paragraph": 1,
+        "code": 1
+      }
+    },
+    {
+      "file": "task-template.md",
+      "title": "Task template",
+      "blocks": 3,
+      "histogram": {
+        "heading_1": 1,
+        "paragraph": 1,
+        "code": 1
+      }
+    }
+  ],
+  "warnings": []
+}
