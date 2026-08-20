@@ -9,6 +9,23 @@ __pycache__/
 kynd-library/_site/
 content-engine/generated/
 
+# Agent output guards — keep agent dumps out of the Kynd repo
+HERMES-AGENT-RESOURCE/
+LINKEDIN.md
+PLAN.md
+REDDIT.md
+REMIX-LIBRARY.md
+SAME-VISION-SITES.md
+SUBSTACK.md
+VOICE-LOOP.md
+X-THREAD.md
+_franco_discord_pull.py
+capture.py
+discord_franco_livepull.json
+discord_franco_raw.json
+verify-library.mjs
+screenshots/
+
 # Secrets
 *.token
 discord_token.txt
