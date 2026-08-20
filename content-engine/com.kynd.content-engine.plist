@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.kynd.content-engine</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/bin/python3</string>
+        <string>/Users/francoleff/workspace/kynd/content-engine/run_scheduled.py</string>
+    </array>
+    <key>StartInterval</key>
+    <integer>604800</integer>
+    <key>WorkingDirectory</key>
+    <string>/Users/francoleff/workspace/kynd/content-engine</string>
+    <key>StandardOutPath</key>
+    <string>/Users/francoleff/kynd-os/monitors/content_out.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/francoleff/kynd-os/monitors/content_err.log</string>
+    <key>RunAtLoad</key>
+    <false/>
+</dict>
+</plist>
