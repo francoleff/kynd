@@ -24,7 +24,7 @@ cd ~/kynd/research-agent
 
 ### File 1 — `AGENTS.md`
 
-This file shapes the agent. Hermes injects it into every conversation in this folder.
+This file shapes the agent. Hermes injects it into every conversation in this folder. (Full explanation: [Context files](../foundation/context-files.md).)
 
 ```markdown
 # Research Brief Agent
@@ -121,7 +121,7 @@ Keep going until the output is useful. Each good iteration teaches the agent.
 After a successful brief:
 
 ```
-This research-brief workflow worked well. Create a skill for it so I can
+This research brief workflow worked well. Create a skill for it so I can
 reuse it for any topic.
 ```
 
@@ -130,6 +130,8 @@ Hermes can create skills autonomously after complex tasks (they land in `~/.herm
 ```
 /research-brief "local LLMs on a laptop"
 ```
+
+See [Building skills](../playbooks/building-skills.md) for the full pattern.
 
 ## Make it automatic — cron (optional)
 
@@ -146,7 +148,7 @@ Save each brief to briefs/. Keep my AGENTS.md format. Deliver: local."
 - [ ] `AGENTS.md` is read (ask: "what does my AGENTS.md say?")
 - [ ] Briefs save to the right folder with the right name
 - [ ] Format matches `AGENTS.md` exactly
-- [ ] No fabricated sources (spot-check 2+ links)
+- [ ] No fabricated sources (spot-check 2+ links) — see [QA discipline](../playbooks/qa-discipline.md)
 - [ ] Unverifiable claims marked `[UNVERIFIED]`
 - [ ] Skill works from a fresh chat (`/research-brief <topic>`)
 - [ ] Cron job runs and delivers where configured

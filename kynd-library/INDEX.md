@@ -6,8 +6,6 @@ This is not a blog. It is a working knowledge base. Every page exists to make yo
 
 ## How to use it (the loop)
 
-Start anywhere, move in a loop:
-
 ```
 UNDERSTAND  →  LEARN  →  DECIDE  →  BUILD  →  EXECUTE  →  IMPROVE
    ↑                                                          │
@@ -27,21 +25,22 @@ You do not read the Library front to back. You enter at the problem you have rig
 
 | Area | What it is for | Start here |
 |------|----------------|------------|
-| [Foundation](foundation/README.md) | What AI agents are, how they work, and the words we use. Read this first if you are new. | [Understand AI agents](foundation/understand-ai-agents.md) |
-| [Build](build/README.md) | Going from zero to a working agent. The practical path. | [Hermes starter path](build/hermes-starter-path.md) |
-| [Business](business/README.md) | Turning what you build into something that earns. | area index |
-| [Personal OS](personal-os/README.md) | Using agents to run your own life and work. | area index |
-| [Playbooks](playbooks/README.md) | Reusable step-by-step methods. Kynd's core IP. | [Problem-First Method](playbooks/problem-first-method.md) |
-| [Resources](resources/README.md) | Curated tools, links, and references. | [The Tool Library](resources/README.md) |
+| [Foundation](foundation/README.md) | What agents are, how they work, and the files that shape them. | [Understand AI agents](foundation/understand-ai-agents.md) |
+| [Build](build/README.md) | Going from zero to a working agent. | [Hermes starter path](build/hermes-starter-path.md) |
+| [Playbooks](playbooks/README.md) | Reusable methods and decisions. Kynd's core IP. | [Problem-First Method](playbooks/problem-first-method.md) |
+| [Business](business/README.md) | Turning builds into leverage or income. | area index |
+| [Resources](resources/README.md) | Curated tools and references. | [The Tool Library](resources/README.md) |
 | [Case Studies](case-studies/README.md) | Real builds, what happened, what to steal. | [Research Brief Agent](case-studies/research-brief-agent.md) |
+| [Personal OS](personal-os/README.md) | Running your own life with agents. | area index |
 | [Frontier](frontier/README.md) | What is new and what to watch. | area index |
 
 ## Start here (if you are brand new)
 
 1. [Understand AI agents](foundation/understand-ai-agents.md) — 5 minutes, no jargon.
-2. [The Kynd glossary](foundation/kynd-glossary.md) — the words we use, defined once.
-3. [The Problem-First Method](playbooks/problem-first-method.md) — the only framework you need to start.
-4. [Build your first agent](build/hermes-starter-path.md) — the path that takes you there.
+2. [Should you use an agent for this?](playbooks/should-you-use-an-agent.md) — the filter to run before you build.
+3. [Context files](foundation/context-files.md) — the spine every build sits on.
+4. [The Problem-First Method](playbooks/problem-first-method.md) — the only framework you need to start.
+5. [Build your first agent](build/hermes-starter-path.md) — the path that takes you there.
 
 ## How this Library is organized
 

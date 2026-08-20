@@ -7,8 +7,8 @@ Curated tools, links, and references. We do not list everything — we list what
 The full curated tool list lives on the web as **The Kynd Library** — 70 AI-agent tools, each with what it is, what you would build with it, and what it costs. Free, no email.
 
 - Live page: https://join-kynd.netlify.app/library.html
-- Source in this workspace: `../../kynd-site/library.html` (the cards are plain HTML, searchable and filterable client-side)
-- Spreadsheet export: `../../kynd-site/KYND_Library.xlsx`
+- Source in this workspace: `../kynd-site/library.html` (the cards are plain HTML, searchable and filterable client-side)
+- Spreadsheet export: `../kynd-site/KYND_Library.xlsx`
 
 The tools are grouped into categories. The categories themselves are a map of the agent stack:
 

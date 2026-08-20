@@ -4,6 +4,8 @@ This is the only framework you need to start building with AI agents. It is Kynd
 
 Start with the problem. Always.
 
+Before you start, run the [Should you use an agent for this?](should-you-use-an-agent.md) filter. If the task is a one-off or a fixed formula a spreadsheet handles, skip the agent and do it by hand. The method below assumes you already have a real, repeatable task.
+
 ## The method in three steps
 
 ### 1. Name one real task you already do
@@ -11,7 +13,7 @@ Start with the problem. Always.
 Not a dream project. A boring, repeatable thing you actually did this week.
 
 - "I summarize every customer email before I reply."
-- "I research a competitor every time we pitch."
+- "I research a competitor before every pitch."
 - "I turn my messy notes into a clean to-do list."
 
 If you would pay someone $5 to do it, it counts. The smaller and more real, the better.
@@ -23,7 +25,7 @@ In plain words, like you are explaining it to a friend. Say:
 - What the output is (a summary, a table, a draft).
 - What to do when it goes wrong (try again, ask me, stop).
 
-You are not writing code. You are writing the spec a smart intern would need.
+You are not writing code. You are writing the spec a smart intern would need. This is the same move as the **"Done looks like"** checklist in an [AGENTS.md](../foundation/context-files.md).
 
 ### 3. Talk to an AI and tell it what you want
 
@@ -42,8 +44,6 @@ Three tries, every time. Most problems crack by the third.
 - You learn the tool *through* the task, not in a vacuum.
 - Every solved problem becomes a document. Every document becomes an asset. Over time you accumulate a toolkit that is yours.
 
-Before you start, run the [Should you use an agent for this?](should-you-use-an-agent.md) filter. If the task is a one-off or a fixed formula a spreadsheet handles, skip the agent and do it by hand. The method below assumes you already have a real, repeatable task.
-
 ## A worked example
 
 **Task:** "Summarize the three longest unread emails in my inbox into one bullet list."
@@ -59,6 +59,7 @@ That is a build. Not a course. A thing you will use Monday.
 
 ## Connect it
 
-- Stuck on what to build? See [Understand AI agents](../foundation/understand-ai-agents.md) for what agents can do.
-- Want the concrete path to a working agent? [Build your first agent](../build/hermes-starter-path.md).
-- See it applied: [Research Brief Agent case study](../case-studies/research-brief-agent.md).
+- Decide first: [Should you use an agent?](should-you-use-an-agent.md)
+- The spine under it: [Context files](../foundation/context-files.md)
+- The concrete path: [Build your first agent](../build/hermes-starter-path.md)
+- See it applied: [Research Brief Agent case study](../case-studies/research-brief-agent.md)

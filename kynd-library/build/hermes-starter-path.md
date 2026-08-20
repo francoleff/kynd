@@ -2,7 +2,7 @@
 
 This is the concrete path from zero to a working agent, using the [Kynd Hermes Agent course](../../HERMES-AGENT-RESOURCE/README.md) as the deep reference. The path is short on purpose: install, build one real thing, then expand.
 
-If you have not read [Understand AI agents](../foundation/understand-ai-agents.md), do that first. It takes five minutes and makes the rest make sense.
+If you have not read [Understand AI agents](../foundation/understand-ai-agents.md) and [Context files](../foundation/context-files.md), do that first. They take ten minutes and make the rest make sense.
 
 ## The path
 
@@ -24,7 +24,7 @@ Success looks like: you type `hermes` and a clean agent session opens.
 
 Pick a model. The course explains how to switch providers with `hermes model` (Nous Portal, OpenRouter, OpenAI, Anthropic, Google, DeepSeek, or a local model). Start with whatever is cheapest that works. You can change it later.
 
-Understand the harness pieces in [course §3: The Harness](../../HERMES-AGENT-RESOURCE/03-understanding-the-harness.md) — tools, skills, memory, and context files. You only need the parts you use.
+Understand the harness pieces in [course §3: The Harness](../../HERMES-AGENT-RESOURCE/03-understanding-the-harness.md) — tools, skills, memory, and context files. You only need the parts you use. The context-file habit is covered in [Foundation](../foundation/context-files.md).
 
 ## Step 3 — Build 1: the Research Brief Agent
 
@@ -32,7 +32,7 @@ This is the beginner build. It researches a topic, verifies what it finds, and w
 
 Walk it end to end in [course §4](../../HERMES-AGENT-RESOURCE/04-build-your-first-agent.md). The working pattern:
 
-- A folder with an `AGENTS.md` that defines the agent's role, research rules, and output format.
+- A folder with an `AGENTS.md` that defines the agent's role, research rules, and output format. (See [Context files](../foundation/context-files.md).)
 - (Optional) a `SOUL.md` for voice.
 - A first prompt that names the topic and points at the format.
 - Three iterations to fix what is wrong — this is the [Problem-First Method](../playbooks/problem-first-method.md) in action.
@@ -63,4 +63,8 @@ Pick the one closest to a problem you actually have. That is the whole point of 
 - A repeatable workflow captured as a skill.
 - The pattern for everything else: context files shape the agent, prompts steer it, skills capture what works.
 
-Next: learn the [Content engine](../playbooks/content-engine.md) if you want to publish what you build, or browse the [Tool Library](../resources/README.md) when you need a capability.
+## Next
+
+- Learn the [Content engine](../playbooks/content-engine.md) if you want to publish what you build.
+- Browse the [Tool Library](../resources/README.md) when you need a capability.
+- Capture it: [QA discipline](../playbooks/qa-discipline.md).

@@ -1,6 +1,8 @@
-# The content engine (one pillar, four platforms)
+# Content engine (one pillar, four platforms)
 
 Kynd's publishing system. You write one deep essay, then cut it into four platform posts. This is how Kynd ships consistent content without writing four separate pieces from scratch.
+
+**Answers:** What is the content engine? What is the structure of each post? When do I publish? How does Kynd actually run it?
 
 ## The shape
 
@@ -17,7 +19,7 @@ One essay. Four outputs. Same core argument, rewritten for each place.
 
 1. **Hook** — open with an observation. "Everyone is waiting for permission."
 2. **The enemy** — name the false belief and dismantle it. "You need credentials first." Wrong.
-3. **The advantage** — bring in the [Problem-First Method](../playbooks/problem-first-method.md) and Kynd. State it as fact.
+3. **The advantage** — bring in the [Problem-First Method](problem-first-method.md) and Kynd. State it as fact.
 4. **Three steps** — the actionable core.
 5. **One CTA** — a single call to action.
 
@@ -59,6 +61,10 @@ If you would not say it out loud, cut it.
 
 Publish the pillar (Substack) as Post Zero, then the thread and LinkedIn the same day. Reddit a day later, no link — so it does not read as a spam wave. Every comment gets the Discord invite. Nothing else.
 
+## How Kynd actually runs it
+
+Franco built a real tool for this: the [Kynd Content Engine](../case-studies/kynd-content-engine.md) — a local Python script (`content-engine/engine.py`) that takes one topic and generates all four cuts in his enforced voice, with a guard that refuses banned words and bio framing. It writes files; it never posts. That is the [Problem-First Method](problem-first-method.md) applied to content: name the repetitive task (weekly rewrite), describe "done" (four voice-correct cuts), automate it.
+
 ## Why this is in a builder library
 
-Building is half the game. The other half is showing your work so a tribe forms around it. This engine turns one writing session into a week of reach. It pairs with the [Content System build](../../HERMES-AGENT-RESOURCE/06-real-projects.md) if you want to automate the draft stage.
+Building is half the game. The other half is showing your work so a tribe forms around it. This engine turns one writing session into a week of reach. It pairs with the [Content System build](../build/hermes-starter-path.md) if you want to automate the draft stage.

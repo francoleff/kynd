@@ -2,6 +2,8 @@
 
 The fastest way to waste a week is to build an agent for a task that does not need one. This is the gate you run before the [Problem-First Method](problem-first-method.md). If the answer is "no," you just saved yourself a project.
 
+**Answers:** Should I build an agent for this? When is a simpler tool better? What are the traps?
+
 ## The five-question filter
 
 Answer each. If you say "yes" to the task on the left and "no" to the warning on the right, an agent is a good fit.
@@ -26,7 +28,7 @@ Three or more "yes" → build it. One or two → probably not worth an agent yet
 
 ## A worked sort
 
-- "Research a competitor before every pitch." → Repeatable ✓, involves judgment ✓, "done" = a brief ✓, breakable into steps ✓, mistake cost low ✓. **Build it.** (This is the [Research Brief Agent](../case-studies/research-brief-agent.md).)
+- "Research a competitor before every pitch." → Repeatable ✓, involves judgment ✓, "done" = a brief ✓, breakable ✓, mistake cost low ✓. **Build it.** (This is the [Research Brief Agent](../case-studies/research-brief-agent.md).)
 - "Send a birthday email to my mom." → One-off, fixed content. **Skip.** A calendar reminder does it.
 - "Auto-trade my portfolio." → Mistake cost is catastrophic. **Not yet** — and maybe never unattended.
 - "Turn my meeting notes into action items." → Repeatable, messy input, clear output, breakable, low cost. **Build it.**

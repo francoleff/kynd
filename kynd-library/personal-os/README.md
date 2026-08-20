@@ -26,6 +26,7 @@ Release gate: "I can text my agent and get a useful reply, and it runs my Monday
 
 - [Understand AI agents](../foundation/understand-ai-agents.md) — what "memory" and "gateway" mean.
 - [Research Brief Agent case study](../case-studies/research-brief-agent.md) — the same context-file pattern, applied to you.
+- [Context files](../foundation/context-files.md) — the shape of every personal agent.
 
 ## Wanted (not yet written)
 

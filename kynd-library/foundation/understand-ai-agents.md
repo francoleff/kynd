@@ -13,6 +13,16 @@ An AI agent is a program that uses a large language model (LLM) as its brain, an
 
 You can swap the brain. The same harness can run a cheap model or a frontier model. The harness is the part that matters for building.
 
+## What an agent actually does, step by step
+
+Hermes (the harness Kynd teaches) runs a loop:
+
+```
+read context → think → pick a tool → act → observe → repeat
+```
+
+Until your request is done. Everything you control feeds the first step: your system prompt, context files, the conversation, memory, skills. That is why being specific in your prompts works — it is the only way you steer the loop.
+
 ## What an agent can actually do
 
 A good agent harness gives the model these kinds of hands:
@@ -31,8 +41,8 @@ The model decides what to do. The harness does it.
 ## What an agent cannot do (yet)
 
 - It is not reliable on long, ambiguous tasks without checkpoints. Break big tasks into small ones.
-- It can be wrong confidently. Verify the output, especially anything it ran.
-- It does not "know" your business unless you give it context. Memory and good instructions fix most of this.
+- It can be wrong confidently. Verify the output, especially anything it ran. See [QA discipline](../playbooks/qa-discipline.md).
+- It does not "know" your business unless you give it context. [Context files](context-files.md) and good instructions fix most of this.
 - It cannot make a decision you have not framed. That is your job — which is exactly what the [Problem-First Method](../playbooks/problem-first-method.md) is for.
 
 ## Why this matters for you
@@ -42,5 +52,6 @@ Most people stop at the chatbot. They ask it to write an email and copy-paste. A
 ## Next
 
 - New to the words? Read the [Kynd glossary](kynd-glossary.md).
+- Learn the spine: [Context files](context-files.md).
 - Ready to build? The [Problem-First Method](../playbooks/problem-first-method.md) is the fastest way to start.
 - Want the concrete path? [Build your first agent](../build/hermes-starter-path.md).

@@ -7,6 +7,7 @@ Every case study should be reproducible. If you cannot build it from the page, t
 ## Contents
 
 - [Research Brief Agent](research-brief-agent.md) — the first build every member should ship. Verified, full files, iterate loop.
+- [Kynd Content Engine](kynd-content-engine.md) — a real Kynd tool that turns one topic into four voice-correct posts, with a voice guard.
 
 ## Wanted (not yet written)
 
