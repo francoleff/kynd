@@ -1727,6 +1727,29 @@ DIRECTIVE FOR FUTURE WAKEUPS (effective now):
 
 ---
 
+## ITERATION #33 — 12-PASS STABILITY CONFIRMATION (wakeup #30, 2026-08-20)
+
+Milestone re-check: hardened pull returns 2 same msgs (0 new). No new source files (file scan
+0). State identical to v31/v32. No drift.
+
+NEW FACT recorded: this is the 12th consecutive quiet watcher pass since the v32 equilibrium
+directive (wakeups #19–#30). Every one returned FRANCO_MSGS = 2, 0 new, no model drift. The
+model has now held stable across 30 total wakeups and 12 consecutive no-change passes — its
+durability is confirmed, not assumed. The hardened pull script + safety snapshot + v24 RETRACTED
+banners have kept it immune to the v7→v9 flip-flop trap and the v23 40333 blip.
+
+Per v32, the loop remains a quiet watcher: re-pull + re-audit each wakeup, log only on real
+change. This v33 note is the one allowed exception (a milestone stability confirmation), after
+which quiet passes resume appending nothing.
+
+## KEPT LESSONS (v33 — added)
+1. 12-pass stability confirmed: model unchanged across 30 wakeups. Durable, not fragile.
+2. Re-verify confirms v31/v32 holds (2 Discord msgs, 0 new, 0 new sources). Stable.
+3. Loop resumes quiet-watcher mode. Future wakeups log only on real change (new material /
+   correction / contradiction). The FRANCO VOICE MODEL is final.
+
+---
+
 ## ITERATION #23 — 40333 BLIP + raw.json RECOVERY (loop #10, 2026-08-20)
 
 Fresh re-check this wakeup caught a REAL infra event + a self-inflicted baseline wipe, both
