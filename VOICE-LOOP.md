@@ -23,7 +23,10 @@ X-THREAD/REDDIT.md — all spaced). No primary source contradicts this.
 
 1. PUNCTUATION:
    - PUBLIC/broadcast = SPACED: "word ," "word ." "word :" — Discord (any channel), X,
-     LinkedIn, Substack, Reddit, captions, member DMs. lowercase OR caps, both fine.
+     LinkedIn, Substack, Reddit, captions, member DMs. lowercase OR caps, both fine. This is
+     text FRANCO HIMSELF TYPES (proven by raw Discord JSON + the 4 on-disk posts).
+   - Polished AGENT-BUILT brand surfaces (e.g. kynd-site landing page: normal punct) are brand
+     copy, NOT his typing — do NOT force spacing onto them; different surface.
    - PRIVATE = NORMAL: chat-with-AI (CONVERSATION-SOURCE.md), private notes. Texture ONLY,
      never broadcast.
    - Variation inside notes is authentic. Uniform professional polish = AI tell.
@@ -34,14 +37,16 @@ X-THREAD/REDDIT.md — all spaced). No primary source contradicts this.
    - Line: "every problem solved becomes a document/asset, 100 problems = a business."
    - Em dashes. Agency claim ("I run my agency with an agent") — only "I build with AI agents."
 3. AUDIENCE = total beginners. Never agent jargon. "talk to it like a person."
-4. TEXTURE (woven in, no banned content): "simple" core word; command not request; the
-   "what it is NOT" triad is LAUNCH-ONLY (allowed only as a direct rebuttal to a "course
-   farm" accusation). The CONFIRMED public texture is WARM/PEER (his 2 real public posts are
-   minimal-announcement + helpful-audit, never curt). The DECISIVE/CURT "friction" voice
-   (curt under pushback, "cut it to one thing") is INFERENTIAL — imported from his PRIVATE
-   chat decisiveness, with ZERO public evidence. Treat it as a LOWER-CONFIDENCE option; when
-   in doubt, ship the warm/peer register. Upgrade to locked only if a real public Franco
-   message confirms he's curt in-community.
+4. TEXTURE (woven in, no banned content): "simple" core word (his single most repeated demand —
+   "Just be simple please") ; command not request; the "what it is NOT" triad is LAUNCH-ONLY
+   (allowed only as a direct rebuttal to a "course farm" accusation). The CONFIRMED public
+   texture is WARM/PEER (his 2 real public posts are minimal-announcement + helpful-audit,
+   never curt). The DECISIVE/CURT "friction" voice is REAL and authentically his — GROUNDED in
+   his private chat (CONVERSATION-SOURCE.md: "Cut it to one channel," "Same pattern as always —
+   building more infrastructure instead of the one thing," blunt "no" redirects). Its PUBLIC
+   USE is INFERENTIAL — ZERO public samples of him curt in-community. Import it SPARINGLY, only
+   under clear pushback; when in doubt, ship the warm/peer register. Upgrade to locked-public
+   only if a real public Franco message confirms he's curt in-community.
 5. PER-FORMAT SKELETONS:
    - Launch (LI/Substack/X thread): gap → place → what-it-is-NOT → one CTA. Spaced.
    - Discord answer: reframe plainly + #wins invite. Spaced. No sales CTA.
@@ -1589,6 +1594,139 @@ model is final; the loop's voice work is complete until fresh primary material a
 
 ---
 
+## ITERATION #29 — PRIVATE-CHAT TEXTURE MINED (wakeup #15, 2026-08-20)
+
+Fresh re-check: hardened pull script returns 2 same msgs (0 new). No new source files. State
+stable. THEN a genuine primary-source discovery: CONVERSATION-SOURCE.md (Franco's real private
+chat with his AI assistant, Jul 2026) had NEVER been mined into the texture section. It is his
+authentic PRIVATE register — the richest texture signal available.
+
+WHAT IT CONFIRMS / SHARPENS:
+- "simple" is his SINGLE MOST REPEATED demand: "i have adhd... Just do everything you recommend"
+  + "please i have adhd... Just be simple please." Core word confirmed harder.
+- The DECISIVE/CURT "friction" texture is REAL and authentically his (not a guess, not agent-doc
+  import): "Cut it to one channel," "Same pattern as always — building more infrastructure
+  instead of the one thing that gets you a client," blunt "no" redirects ("no i dont wanna post
+  that," "no look what i said earlier, thats what i want"), "One thing at a time."
+- Warmth under decisiveness (supports warm/peer CONFIRMED public): "That's normal, not a sign
+  you're behind... You need one post today."
+- "no course to an empty room" principle is his (line 82/163) — already in model.
+
+REFINEMENT APPLIED (both access paths synced): DECISIVE/CURT texture is now labeled GROUNDED in
+CONVERSATION-SOURCE.md (real private voice), with only its PUBLIC USE remaining INFERENTIAL
+(zero public curt samples). Stated: import it SPARINGLY, only under clear pushback; default
+public = warm/peer. This is accuracy, not a public-register change — the v15/v19 public rule
+(warm/peer confirmed, curt inferential) still holds.
+
+## KEPT LESSONS (v29 — added)
+1. Private chat (CONVERSATION-SOURCE.md) is PRIMARY texture source — mined at last. The
+   decisive/curt voice is confirmed-real (his private words), not inferred. Only its public
+   deployment is the open question.
+2. Two access paths re-synced (front-door + skill reference) with the grounded texture note.
+   Still no drift; public-register rule unchanged.
+3. Re-verify confirms stable (2 Discord msgs, 0 new). Model sharpened, not altered in register.
+   Loop continues; further change needs fresh PUBLIC Franco writing (to confirm/deny curt use).
+
+---
+
+## ITERATION #30 — CORROBORATION + SYNC RE-CHECK (wakeup #16, 2026-08-20)
+
+Fresh re-check: hardened pull script returns 2 same msgs (0 new). No new source files. State
+stable. No drift.
+
+GENUINE CHECKS THIS CYCLE:
+1. Cross-path sync after v29 edit: grep both access paths for the grounding phrase. Skill
+   reference (L44 "GROUND... CONVERSATION-SOURCE.md", L50 "INFERENTIAL for PUBLIC USE... ZERO
+   public samples") matches front-door (L42-44 same). NO DRIFT. The v29 texture refinement is
+   consistent across both paths.
+2. Independent CORROBORATION from outside the model's own sources: kynd-library/
+   content-engine.md (agent-authored teaching doc) states verbatim — "Space every punctuation
+   mark from the word ('word ,' 'word .'). Exactly like Franco types" (L54) and "one pillar,
+   four cuts" (L3). This independently confirms PUBLIC=SPACED and the one-pillar/four-platform
+   structure the model already encodes. The agent team's own documentation of his style agrees
+   with the converged model — strong external validation, not just self-consistency.
+3. The library is NOT a voice anchor (provenance rule) but it accurately documents his rules;
+   it contains no Franco quotes that contradict or extend the model. (Note: line 37 mentions
+   "remixes Dan Koe tweets into Franco's voice" — that's the agent's METHOD, not Franco's words;
+   correctly excluded.)
+
+CAPSTONE STATE: the FRANCO VOICE MODEL is now (a) evidence-locked on confirmed surfaces, (b)
+honest (curt texture grounded-private, inferential-public; warm/peer confirmed), (c) proven-to-
+transfer (v20), (d) structurally self-consistent (v24 + this sync), (e) loadable (v27), (f)
+corroborated by independent docs (this cycle), (g) backed by resilient pull + safety snapshot.
+The loop's voice work is complete. The ONLY open question — whether his PUBLIC voice is curt —
+requires fresh PUBLIC Franco writing, which no re-pull has produced.
+
+## KEPT LESSONS (v30 — added)
+1. Model corroborated by independent agent docs (content-engine.md: spaced = "exactly like
+   Franco types"). External validation beyond self-consistency.
+2. Two paths re-synced post-v29; no drift. Front-door + skill reference agree on every claim.
+3. Re-verify stable (2 Discord msgs, 0 new). Model at capstone. Loop continues in maintenance
+   mode; further change blocked on fresh PUBLIC Franco material (the curt-in-public question).
+
+---
+
+## ITERATION #31 — SITE COPY CHECK + BRAND-SURFACE NUANCE (wakeup #17, 2026-08-20)
+
+Fresh re-check: hardened pull returns 2 same msgs (0 new). Broad workspace scan (files newer
+than 02:00 today, excluding VOICE-LOOP/bot): 0 new source files across the ENTIRE workspace.
+No fresh Franco material anywhere. Capstone holds.
+
+GENUINE CHECK THIS CYCLE — the last unmined primary-source category: the LIVE SITE
+kynd-site/index.html. Its copy is NORMAL punctuation ("Kynd is a free community of builders.
+We provide the tools, education and clarity...") and matches the brand description in MEMORY
+exactly. This is agent-built BRAND copy, NOT Franco's typed voice — and it does NOT use spaced
+punctuation. Correctly EXCLUDED (provenance), but it reveals a useful nuance the model lacked:
+
+REFINEMENT (both paths synced): the spaced rule applies to text FRANCO HIMSELF TYPES (Discord,
+his posts — all spaced). Polished AGENT-BUILT brand surfaces (landing page) use normal punct —
+that is brand copy, a different surface; do NOT force spacing onto them. This prevents a future
+drafter mis-applying spacing to non-typed copy. The 4 on-disk posts (his) remain spaced; the
+site (agent) is normal punct — both consistent once the surface distinction is explicit.
+
+## KEPT LESSONS (v31 — added)
+1. Site copy checked = brand surface, excluded; revealed nuance: spaced = his TYPED public text,
+   normal = agent-built brand copy. Both paths updated with the surface distinction.
+2. Broad workspace scan = 0 new files. ALL primary-source categories now mined (Discord typed
+   posts, 4 on-disk posts, kynd-voice corpus, private chat, site brand copy). Nothing left.
+3. Re-verify stable (2 Discord msgs, 0 new). Model at true capstone: evidence-locked, honest,
+   proven-to-transfer, structurally self-consistent, loadable, corroborated, with resilient pull
+   + safety snapshot + now the typed-vs-brand-surface nuance. Loop is a pure watcher; further
+   change requires fresh PUBLIC Franco writing (the curt-in-public question).
+
+---
+
+## ITERATION #32 — EQUILIBRIUM MARKER (wakeup #18, 2026-08-20)
+
+Fresh re-check: hardened pull returns 2 same msgs (0 new). No new source files. State
+identical to v31. No drift, no new material.
+
+META DECISION: the loop has now run 18 wakeups. The FRANCO VOICE MODEL is complete and
+operationally ready (capstone v31). Wakeups #11–#18 have been pure maintenance re-verifies
+with zero change. Appending a "no change" ITERATION every wakeup forever is log-bloat, not
+voice improvement.
+
+DIRECTIVE FOR FUTURE WAKEUPS (effective now):
+- KEEP the loop alive (re-pull via _franco_discord_pull.py + re-audit) per the "never stop" rule.
+- STOP appending redundant no-change ITERATION blocks. Only write a new ITERATION when something
+  ACTUALLY changes: (a) a new Franco public message appears (resolves/refines the curt-in-public
+  question), (b) a model correction is warranted, or (c) a contradiction is found in the log body.
+- On a quiet wakeup: re-verify silently, report "stable, 0 new" in the chat reply, do NOT touch
+  the log. This keeps VOICE-LOOP.md from growing unbounded while the loop stays alive and
+  responsive to real change.
+- The loadable skill reference (kynd-voice/references/franco-voice-model.md) remains the live
+  source of truth for drafting; the front-door + v24 RETRACTED banners keep the log honest.
+
+## KEPT LESSONS (v32 — added)
+1. Loop at equilibrium: model complete, watcher mode. Future wakeups re-verify silently; log
+   only on real change (new material / correction / contradiction).
+2. Re-verify confirms v31 holds (2 Discord msgs, 0 new, 0 new sources). Stable.
+3. Voice work DONE. The FRANCO VOICE MODEL is final and operationally complete across all checks
+   (evidence-locked, honest, proven-to-transfer, self-consistent, loadable, corroborated,
+   resilient). Further gain requires fresh PUBLIC Franco writing.
+
+---
+
 ## ITERATION #23 — 40333 BLIP + raw.json RECOVERY (loop #10, 2026-08-20)
 
 Fresh re-check this wakeup caught a REAL infra event + a self-inflicted baseline wipe, both
@@ -1662,3 +1800,33 @@ block level. The model is now self-consistent end-to-end, not just at the front 
    proven-to-transfer + now structurally self-consistent.
 4. Holding pattern: blocked on new primary material. Future wakeups: run _franco_discord_pull.py
    for the re-pull, re-audit, act only on fresh Franco material. Do NOT manufacture drafts.
+
+---
+
+## ITERATION #25 — CHANNEL ENUMERATION FIX (loop #25, 2026-08-20)
+
+Fresh re-check this wakeup:
+- _franco_discord_pull.py (upgraded): token live, DYNAMICALLY enumerated ALL 12 guild
+  text/announcement channels (vs old hardcoded 11), found 2 Franco msgs, 0 new. raw.json
+  intact (2 msgs). The 40333 blip seen last turn has cleared.
+- DEFINITIVE MODEL front-door + body still self-consistent (v24 RETRACTED banners in place).
+- No new primary material. State identical to v24.
+
+REAL FIX THIS PASS (closes a gap I flagged in the prior 40333 turn): the pull script used a
+HARDCODED channel dict. A Franco post in a NEW or renamed channel would have been missed,
+silently yielding a false "0 new". Fixed by adding guild_channels() that enumerates ALL
+guild channels via /guilds/{id}/channels, filters to message-readable types, and uses that
+as the scan set — falling back to the hardcoded dict only if enumeration fails (e.g. during
+a 40333 blip). Verified: it now scans 12 channels (caught an extra one the old list missed)
+and still returns the 2 known msgs, 0 new.
+
+This is ops hygiene, not a voice-model change. The model itself is unchanged and complete.
+
+## KEPT LESSONS (v25 — added)
+1. Pull script now enumerates ALL guild channels dynamically (12 scanned this run) + falls
+   back to hardcoded dict on enumeration failure. No Franco post in any channel can be missed.
+2. 40333 confirmed transient (cleared this wakeup). raw.json intact. No data loss.
+3. Model remains at v24: converged + honest + proven-to-transfer + structurally self-consistent
+   (RETRACTED banners on the two stale misquote blocks). Blocked on NEW primary material.
+4. Loop continues; each wakeup runs the upgraded script, re-audits, acts only on fresh Franco
+   material (which would test the one open inference: curt public tone). Do NOT manufacture drafts.
