@@ -207,26 +207,16 @@ h1 {
   color: #fff;
   text-decoration: none;
   white-space: nowrap;
-  background: rgba(255, 255, 255, 0.18);
-  -webkit-backdrop-filter: blur(24px) saturate(180%);
-  backdrop-filter: blur(24px) saturate(180%);
-  border: 1px solid rgba(255, 255, 255, 0.45);
+  background: #5865f2;
+  border: 1px solid #5865f2;
   box-shadow:
-    0 10px 30px -6px rgba(125, 184, 107, 0.45),
-    inset 0 1px 0 rgba(255, 255, 255, 0.5),
-    inset 0 -1px 0 rgba(255, 255, 255, 0.12);
-  transition: transform 0.15s ease, box-shadow 0.2s ease, background 0.2s ease;
+    0 10px 30px -6px rgba(88, 101, 242, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.25),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.1);
 }
 
 .signup__btn:hover {
   text-decoration: none;
-  transform: translateY(-2px);
-  background: rgba(88, 101, 242, 0.85); /* Discord blurple */
-  border-color: rgba(141, 151, 247, 0.9);
-  box-shadow:
-    0 14px 34px -8px rgba(88, 101, 242, 0.55),
-    inset 0 1px 0 rgba(255, 255, 255, 0.4),
-    inset 0 -1px 0 rgba(88, 101, 242, 0.3);
 }
 
 /* ============================================================

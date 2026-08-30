@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The First Build — Kynd</title>
+  <meta name="description" content="Turn a vague idea into a first step you can hand to any AI chat. Free tool from Kynd. No jargon, no code needed.">
+
+  <meta property="og:title" content="The First Build — Kynd">
+  <meta property="og:description" content="Turn a vague idea into a first step you can hand to any AI chat. Free tool from Kynd.">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" href="ky(2).png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    /* First Build tool styles (extends the site theme) */
+    .tool {
+      position: relative;
+      z-index: 1;
+      max-width: 46rem;
+      margin: 0 auto;
+      padding: clamp(6.5rem, 16vh, 9rem) clamp(1.5rem, 5vw, 3rem) clamp(7rem, 12vh, 9rem);
+    }
+    .tool__back {
+      display: inline-block;
+      color: var(--ink-soft);
+      font-size: 0.95rem;
+      margin-bottom: 1.4rem;
+      border-bottom: 1px solid rgba(255,255,255,0.4);
+    }
+    .tool__back:hover { color: #fff; text-decoration: none; }
+    .tool h1 {
+      font-size: clamp(2.4rem, 6vw, 3.6rem);
+      margin-bottom: 0.9rem;
+    }
+    .tool__lede {
+      color: var(--ink-soft);
+      font-size: clamp(1.05rem, 2vw, 1.2rem);
+      max-width: 34rem;
+      margin-bottom: 2.4rem;
+    }
+    .field { margin-bottom: 1.5rem; }
+    .field label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      font-size: 1.02rem;
+    }
+    .field .hint {
+      display: block;
+      color: var(--ink-faint);
+      font-weight: 400;
+      font-size: 0.9rem;
+      margin-top: 0.3rem;
+    }
+    .field textarea,
+    .field input {
+      width: 100%;
+      font: inherit;
+      font-size: 1.02rem;
+      color: #16241a;
+      background: rgba(255,255,255,0.95);
+      border: 1px solid rgba(255,255,255,0.6);
+      border-radius: 12px;
+      padding: 0.85rem 1rem;
+      line-height: 1.5;
+      resize: vertical;
+    }
+    .field textarea:focus,
+    .field input:focus { outline: 2px solid #fff; outline-offset: 2px; }
+    .tool__btn {
+      display: inline-block;
+      padding: 1rem 2.4rem;
+      border-radius: var(--radius-pill);
+      font: inherit;
+      font-weight: 600;
+      font-size: 1.05rem;
+      color: #fff;
+      background: #5865f2;
+      border: 1px solid #5865f2;
+      box-shadow: 0 10px 30px -6px rgba(88,101,242,0.45), inset 0 1px 0 rgba(255,255,255,0.25);
+      cursor: pointer;
+      margin-top: 0.4rem;
+    }
+    .tool__btn:hover { opacity: 0.94; }
+    .result {
+      margin-top: 2.6rem;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.3);
+      border-radius: 16px;
+      padding: 1.4rem 1.5rem;
+      -webkit-backdrop-filter: blur(14px);
+      backdrop-filter: blur(14px);
+    }
+    .result[hidden] { display: none; }
+    .result h2 {
+      font-family: var(--font-display);
+      font-weight: 400;
+      font-size: 1.5rem;
+      margin-bottom: 0.8rem;
+    }
+    .result pre {
+      white-space: pre-wrap;
+      word-break: break-word;
+      font: inherit;
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #fff;
+      background: rgba(0,0,0,0.18);
+      border-radius: 10px;
+      padding: 1rem 1.1rem;
+      margin: 0 0 1rem;
+    }
+    .result__copy {
+      display: inline-block;
+      padding: 0.7rem 1.5rem;
+      border-radius: var(--radius-pill);
+      font: inherit;
+      font-weight: 600;
+      color: #16241a;
+      background: #fff;
+      border: 1px solid #fff;
+      cursor: pointer;
+    }
+    .result__copy:hover { opacity: 0.92; }
+    .nextstep {
+      margin-top: 2.2rem;
+      color: var(--ink-soft);
+      font-size: 0.98rem;
+      line-height: 1.6;
+    }
+    .nextstep strong { color: #fff; }
+    .nextstep a { color: #fff; border-bottom: 1px solid rgba(255,255,255,0.5); }
+    .ideas { margin-top: 3.2rem; }
+    .ideas h2 {
+      font-family: var(--font-display);
+      font-weight: 400;
+      font-size: clamp(1.8rem, 4vw, 2.4rem);
+      margin-bottom: 0.4rem;
+    }
+    .ideas__list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0.7rem;
+    }
+    @media (min-width: 560px) {
+      .ideas__list { grid-template-columns: 1fr 1fr; }
+    }
+    .ideas__list li button {
+      width: 100%;
+      text-align: left;
+      font: inherit;
+      font-size: 0.98rem;
+      color: #fff;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.28);
+      border-radius: 12px;
+      padding: 0.85rem 1rem;
+      cursor: pointer;
+      line-height: 1.45;
+      transition: background 0.15s ease, transform 0.1s ease;
+    }
+    .ideas__list li button:hover {
+      background: rgba(255,255,255,0.2);
+    }
+    .ideas__list li button:active { transform: scale(0.99); }
+    .ideas__list li button span { display: block; color: var(--ink-faint); font-size: 0.85rem; margin-top: 0.25rem; }
+  </style>
+</head>
+<body>
+  <canvas class="bg-canvas" id="bg-canvas" aria-hidden="true"></canvas>
+
+  <header class="site-brand">
+    <a class="site-brand__word" href="index.html">Kynd</a>
+  </header>
+
+  <main class="tool">
+    <a class="tool__back" href="index.html">&larr; Back to Kynd</a>
+
+    <h1>The First Build</h1>
+    <p class="tool__lede">
+      You have an idea. You don't know where to start. Fill in three plain lines and get a first step you can paste into any AI chat. No code. No jargon.
+    </p>
+
+    <form id="build-form">
+      <div class="field">
+        <label for="what">1. What do you want to build?</label>
+        <textarea id="what" rows="2" placeholder="A place to keep track of the books my friends lend me."></textarea>
+        <span class="hint">One sentence. Say it like you'd tell a friend.</span>
+      </div>
+
+      <div class="field">
+        <label for="who">2. Who is it for? <span style="font-weight:400;color:var(--ink-faint)">(optional)</span></label>
+        <input id="who" type="text" placeholder="Me and a few friends. None of us code.">
+      </div>
+
+      <div class="field">
+        <label for="done">3. What does "done" look like?</label>
+        <textarea id="done" rows="2" placeholder="I open it, I see a list of who has which book, and I can add or remove one."></textarea>
+        <span class="hint">Describe the finished thing in plain words. What can you do with it?</span>
+      </div>
+
+      <button class="tool__btn" type="submit">Get my first step</button>
+    </form>
+
+    <section class="result" id="result" hidden aria-live="polite">
+      <h2>Your first step</h2>
+      <pre id="prompt-out"></pre>
+      <button class="result__copy" id="copy-btn" type="button">Copy it</button>
+
+      <p class="nextstep">
+        <strong>Now paste that into any AI chat</strong> (ChatGPT, Claude, the one you already use). It will walk you through building it. If it gets stuck or says something you don't understand, copy what it said, tell it you're a beginner, and ask for the next step. Try three times.
+      </p>
+      <p class="nextstep">
+        Building something with this? Bring it to <a href="https://discord.gg/rfqYHF6H9j" target="_blank" rel="noopener noreferrer">Kynd Society</a> and show us. Free to join.
+      </p>
+    </section>
+
+    <section class="ideas" id="ideas">
+      <h2>No idea yet? Start here.</h2>
+      <p class="tool__lede" style="margin-bottom:1.6rem;">
+        Most people freeze because they think a "build" has to be an app. It doesn't. It's a small thing that solves a small problem you actually have. Tap one to load it into the form above.
+      </p>
+      <ul class="ideas__list" id="ideas-list"></ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+  <script>
+    (function () {
+      var form = document.getElementById('build-form');
+      var result = document.getElementById('result');
+      var out = document.getElementById('prompt-out');
+      var copyBtn = document.getElementById('copy-btn');
+
+      function build(what, who, done) {
+        var lines = [];
+        lines.push('I am a total beginner. I want to build something with your help, and I need you to explain every step like I have never coded before.');
+        lines.push('');
+        lines.push('What I want to build: ' + what.replace(/\.$/, '') + '.');
+        if (who && who.trim()) {
+          lines.push('Who it is for: ' + who.trim().replace(/\.$/, '') + '.');
+        }
+        lines.push('What "done" looks like: ' + done.replace(/\.$/, '') + '.');
+        lines.push('');
+        lines.push('Do not write the whole thing at once. Give me the very first small step only. Tell me exactly what to click or type, in plain words. When I finish that step, I will tell you and you will give me the next one. If I get an error, I will paste it to you and you will tell me how to fix it.');
+        return lines.join('\n');
+      }
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var what = document.getElementById('what').value.trim();
+        var who = document.getElementById('who').value.trim();
+        var done = document.getElementById('done').value.trim();
+
+        if (!what || !done) {
+          out.textContent = 'Fill in line 1 (what you want to build) and line 3 (what done looks like). Line 2 is optional.';
+          result.hidden = false;
+          return;
+        }
+
+        out.textContent = build(what, who, done);
+        result.hidden = false;
+        result.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      });
+
+      copyBtn.addEventListener('click', function () {
+        var text = out.textContent;
+        var done = function () {
+          copyBtn.textContent = 'Copied';
+          setTimeout(function () { copyBtn.textContent = 'Copy it'; }, 1600);
+        };
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(text).then(done, function () {
+            fallbackCopy(text); done();
+          });
+        } else {
+          fallbackCopy(text); done();
+        }
+      });
+
+      function fallbackCopy(text) {
+        var ta = document.createElement('textarea');
+        ta.value = text;
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        try { document.execCommand('copy'); } catch (err) {}
+        document.body.removeChild(ta);
+      }
+
+      // Day 5 addition: plain idea starters for people with no idea yet.
+      var IDEAS = [
+        ['A book tracker', 'See who lent you which book, and add or remove one.'],
+        ['A habit tick', 'Mark one small habit done each day and see your streak.'],
+        ['A party planner', 'List what to bring, who brings what, and tick it off.'],
+        ['A money-out log', 'Type what you spent and on what, see the week total.'],
+        ['A recipe box', 'Save recipes in plain words, find one by ingredient.'],
+        ['A trip list', 'Plan a day out: where to go, in what order, what it costs.'],
+        ['A complaint draft', 'Type the situation, get a calm message you can send.'],
+        ['A study helper', 'Paste a topic, get five plain questions to test yourself.'],
+        ['A gift idea saver', 'Note what friends like, so you are not stuck at birthdays.'],
+        ['A weekly plan', 'List the three things that matter this week, in order.']
+      ];
+      var ideasList = document.getElementById('ideas-list');
+      if (ideasList) {
+        IDEAS.forEach(function (pair) {
+          var li = document.createElement('li');
+          var btn = document.createElement('button');
+          btn.type = 'button';
+          btn.innerHTML = pair[0] + '<span>' + pair[1] + '</span>';
+          btn.addEventListener('click', function () {
+            document.getElementById('what').value = pair[0] + '.';
+            document.getElementById('who').value = 'Me. I do not code.';
+            document.getElementById('done').value = pair[1] + '.';
+            document.getElementById('what').focus();
+            document.getElementById('what').scrollIntoView({ behavior: 'smooth', block: 'center' });
+          });
+          li.appendChild(btn);
+          ideasList.appendChild(li);
+        });
+      }
+    })();
+  </script>
+</body>
+</html>

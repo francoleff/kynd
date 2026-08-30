@@ -36,7 +36,13 @@ BANNED_WORDS = ["ship", "shipping", "guru", "annoying task", "building in public
 
 
 def spaced(text: str) -> str:
-    """Enforce Franco's spaced punctuation: mark gets its own space, lowercased."""
+    """Enforce Franco's spaced punctuation: mark gets its own space, lowercased.
+
+    Also strips em-dashes (banned in his voice profile) -> ' - ' so no
+    future cut inherits the REMIX-LIBRARY seed's em-dash defects.
+    """
+    # Em-dash / en-dash -> spaced hyphen (voice rule: no em-dashes).
+    text = text.replace("—", " - ").replace("–", " - ")
     # Normalize any existing spacing around marks first.
     text = re.sub(r"\s*([,.;?!])\s*", r" \1 ", text)
     # Collapse runs of spaces, then fix double-spaces at sentence starts.
@@ -65,7 +71,11 @@ def build_cuts(topic: str, cta_link: str, remix: str = None):
                  "Nobody acts like they've figured it all out .")
     remix_line = ""
     if remix:
-        remix_line = f"\nOne line stays with me : \"{remix}\"\n"
+        # Sanitize the remix too (it is inserted raw into output, so em-dashes
+        # and spacing from the REMIX-LIBRARY seeds must be normalized here).
+        remix_clean = remix.replace("—", " - ").replace("–", " - ")
+        remix_clean = re.sub(r"\s*([,.;?!])\s*", r" \1 ", remix_clean).strip()
+        remix_line = f"\nOne line stays with me : \"{remix_clean}\"\n"
 
     topic_sent = spaced(topic.rstrip(". ")) + " ."
 

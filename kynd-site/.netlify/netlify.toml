@@ -9,6 +9,7 @@ redirects = []
 [build]
 publish = "/Users/francoleff/workspace/kynd/kynd-site"
 publishOrigin = "default"
+base = "/Users/francoleff/workspace/kynd/kynd-site"
 
 [build.environment]
 
