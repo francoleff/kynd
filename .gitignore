@@ -30,3 +30,21 @@ screenshots/
 *.token
 discord_token.txt
 .env
+
+# Kynd-runtime Python
+.venv/
+venv/
+ENV/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+coverage.xml
+htmlcov/
+.vscode/
+.idea/
+*.log
+runtime_state/
+apps/web/node_modules/
+apps/web/.next/
+apps/api/**/__pycache__/
