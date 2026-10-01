@@ -17,7 +17,6 @@ NOT installed automatically — drop the companion plist into
 """
 import json
 import os
-import re
 import subprocess
 import sys
 

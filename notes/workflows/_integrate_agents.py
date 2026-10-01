@@ -18,7 +18,7 @@ NOTE: This is a fallback harness. In the live session, the parent agent integrat
 text outputs directly into KYND/ docs and refreshes the xlsx via execute_code, so this
 script is the repeatable system for FUTURE runs.
 """
-import os, sys, re, glob
+import os, glob
 import openpyxl
 
 HERE = os.path.dirname(os.path.abspath(__file__))
