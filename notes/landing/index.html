@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>KYND Pro — for people who actually ship AI agents</title>
+<meta name="description" content="KYND Pro: the full agentic-AI knowledge base, weekly founder-led build clinics, and a founder-reviewed build audit every quarter. Free Discord stays free." />
+<style>
+  :root{
+    --paper:#f7f4ee; --ink:#2a2927; --muted:#756f68; --line:rgba(42,41,39,0.16);
+    --accent:#b8502f; --accent-ink:#fff;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-font-smoothing:antialiased}
+  body{
+    margin:0; background:var(--paper); color:var(--ink);
+    font-family:Helvetica, Arial, sans-serif; font-size:17px; line-height:1.6;
+  }
+  .wrap{max-width:920px; margin:0 auto; padding:0 24px}
+  h1,h2,h3{font-family:"Didot","Bodoni 72",Georgia,serif; font-weight:400; letter-spacing:-0.02em; line-height:1.05}
+  h1{font-size:clamp(40px,7vw,68px); margin:0 0 18px; text-transform:uppercase}
+  h2{font-size:clamp(28px,4vw,40px); margin:0 0 14px}
+  h3{font-size:22px; margin:28px 0 8px}
+  a{color:inherit}
+  .eyebrow{text-transform:uppercase; letter-spacing:0.18em; font-size:12px; color:var(--muted)}
+  nav{display:flex; align-items:center; justify-content:space-between; padding:22px 0; border-bottom:1px solid var(--line)}
+  nav .brand{font-family:"Didot","Bodoni 72",Georgia,serif; font-size:24px; letter-spacing:0.02em}
+  nav a.cta{font-size:14px; text-decoration:none; border:1px solid var(--ink); padding:9px 16px; border-radius:999px}
+  section{padding:64px 0; border-bottom:1px solid var(--line)}
+  .lead{font-size:20px; color:var(--muted); max-width:60ch}
+  .btn{
+    display:inline-block; text-decoration:none; border-radius:999px; padding:14px 26px; font-size:16px;
+    background:var(--ink); color:var(--paper); margin:8px 10px 8px 0;
+  }
+  .btn.alt{background:transparent; color:var(--ink); border:1px solid var(--ink)}
+  .btn.pro{background:var(--accent); color:var(--accent-ink); border-color:var(--accent)}
+  .price{font-family:"Didot","Bodoni 72",Georgia,serif; font-size:64px; line-height:1; margin:8px 0}
+  .price small{font-family:Helvetica,Arial,sans-serif; font-size:18px; color:var(--muted)}
+  ul.ticks{list-style:none; padding:0; margin:18px 0}
+  ul.ticks li{padding:10px 0 10px 30px; border-bottom:1px solid var(--line); position:relative}
+  ul.ticks li:before{content:"✓"; position:absolute; left:0; color:var(--accent); font-weight:700}
+  .grid2{display:grid; grid-template-columns:1fr 1fr; gap:24px}
+  @media(max-width:640px){.grid2{grid-template-columns:1fr}}
+  .card{border:1px solid var(--line); border-radius:14px; padding:24px}
+  .funnel{counter-reset:step}
+  .funnel li{list-style:none; padding:14px 0 14px 48px; border-bottom:1px solid var(--line); position:relative}
+  .funnel li:before{counter-increment:step; content:counter(step); position:absolute; left:0; top:12px;
+    width:30px; height:30px; border-radius:50%; background:var(--ink); color:var(--paper);
+    display:flex; align-items:center; justify-content:center; font-size:14px}
+  .note{font-size:14px; color:var(--muted)}
+  .todo{background:#fff6ee; border:1px dashed var(--accent); border-radius:10px; padding:14px 16px; font-size:14px; color:var(--ink)}
+  footer{padding:40px 0; color:var(--muted); font-size:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <nav>
+    <div class="brand">KYND</div>
+    <a class="cta" href="https://discord.gg/rfqYHF6H9j" target="_blank" rel="noopener">Join the free Discord</a>
+  </nav>
+
+  <section style="border-bottom:1px solid var(--line)">
+    <p class="eyebrow">Agentic-AI community · free core, paid acceleration</p>
+    <h1>Build agents that actually ship.</h1>
+    <p class="lead">KYND is a free Discord community for people learning to build with AI agents — anti-guru, practical over theoretical, build in public. Kynd Pro is the layer for people ready to go further: the full knowledge base, weekly founder-led build clinics, and a founder-reviewed audit of your build every quarter.</p>
+    <p style="margin-top:24px">
+      <a class="btn pro" href="#pro">Go Pro — $29/mo</a>
+      <a class="btn alt" href="https://discord.gg/rfqYHF6H9j" target="_blank" rel="noopener">Start free on Discord</a>
+    </p>
+    <p class="note">Free core stays free. Pro is acceleration, not a gate.</p>
+  </section>
+
+  <section id="pro">
+    <p class="eyebrow">The flagship offer</p>
+    <h2>KYND Pro</h2>
+    <div class="price">$29<small>/mo &nbsp;·&nbsp; or $290/yr (cash upfront)</small></div>
+    <p class="lead">One impulse-buy for someone already getting value free. The clinic + the audit are the justification.</p>
+    <ul class="ticks">
+      <li>Full <strong>kynd-library</strong> access — the curated, citation-backed agentic-AI knowledge base (frameworks, deep dives, playbooks, tool watch).</li>
+      <li>Weekly founder-led <strong>clinic</strong> — live build review, bring your agent.</li>
+      <li><strong>1 founder-reviewed build audit / quarter</strong> — someone who ships looks at your system and tells you what's wrong.</li>
+      <li>Early seats at <strong>workshops</strong> and <strong>Build-With-Me</strong> cohorts.</li>
+      <li><strong>Pro template drops</strong> — starter agents and scaffolds, not theory.</li>
+      <li>Private <strong>#pro</strong> channel — the room with the people actually shipping.</li>
+    </ul>
+
+    <div class="todo" style="margin-top:22px">
+      <strong>Before deploy — owner action:</strong> set the Stripe Payment Link below. Replace <code>REPLACE_WITH_STRIPE_PAYMENT_LINK</code> with your live KYND Pro link (monthly + annual). Nothing else is required to launch.
+    </div>
+    <p style="margin-top:18px">
+      <!-- OWNER: paste your Stripe Payment Link(s) here -->
+      <a class="btn pro" href="REPLACE_WITH_STRIPE_PAYMENT_LINK">Start KYND Pro</a>
+    </p>
+  </section>
+
+  <section>
+    <p class="eyebrow">How free becomes Pro</p>
+    <h2>The free-to-paid funnel</h2>
+    <ol class="funnel">
+      <li><strong>Free entry</strong> — join Discord, run <code>!start</code>, land in a squad.</li>
+      <li><strong>First win (activation)</strong> — ship a starter agent in 30 days → emotional commitment.</li>
+      <li><strong>Proof deposits</strong> — weekly Office Hours, showcases, member-win spotlights say "this place delivers."</li>
+      <li><strong>Soft pitch</strong> — after the first win: "Want the full playbook + a founder audit of your build? Pro is $29/mo."</li>
+      <li><strong>Cohort invite</strong> — members who post 3+ builds get invited to paid Build-With-Me.</li>
+      <li><strong>High-ticket</strong> — cohort grads with a real business problem get the 1:1 offer.</li>
+    </ol>
+    <p class="note">Conversion target: ≥20% free→Pro once activation &gt;40%.</p>
+  </section>
+
+  <section>
+    <div class="grid2">
+      <div class="card">
+        <p class="eyebrow">Upsell</p>
+        <h3>Build-With-Me Cohort — $750/seat</h3>
+        <p>4-week guided build, small group. For the "want to ship but can't alone" segment. Graduates become the 1:1 pipeline.</p>
+        <a class="btn alt" href="REPLACE_WITH_COHORT_BOOKING_LINK">Ask about the next cohort</a>
+      </div>
+      <div class="card">
+        <p class="eyebrow">High-ticket</p>
+        <h3>Implementation — $3k–$10k</h3>
+        <p>For the "expensive problem, will pay to solve it" segment: founders and agencies. Done-with-you, using the same agent stack.</p>
+        <a class="btn alt" href="REPLACE_WITH_DISCOVERY_CALL_LINK">Book a discovery call</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <p class="eyebrow">Zero product risk</p>
+    <h2>Affiliate layer</h2>
+    <p class="lead">We recommend the tools Kynd already teaches — APIs, infra, courses. Members sign up through our links; we earn. No product to build, no risk to the community's trust.</p>
+  </section>
+
+  <section>
+    <h2>FAQ</h2>
+    <h3>Is the Discord still free?</h3>
+    <p>Yes. Free core — Discord, library, weekly Office Hours, challenges — stays free. That's the ethos.</p>
+    <h3>What if I don't ship anything?</h3>
+    <p>Then Pro isn't for you yet. The funnel is built so the pitch only lands after your first win.</p>
+    <h3>Can I cancel?</h3>
+    <p>Monthly, anytime. Annual is cash upfront for the discount.</p>
+  </section>
+
+  <footer>
+    KYND — know yourself, build with intention. Free Discord community for agentic-AI builders.
+    <br />Landing page generated as part of the chief-of-staff sweep; revenue experiment per <code>kynd-os/GROWTH-REVENUE-2026.md</code>.
+  </footer>
+
+</div>
+</body>
+</html>
